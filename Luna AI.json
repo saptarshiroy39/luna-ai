@@ -1,0 +1,1780 @@
+{
+  "name": "Luna AI",
+  "nodes": [
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-pro",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-pro"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
+      "typeVersion": 1,
+      "position": [
+        -15648,
+        80
+      ],
+      "id": "66476044-bb70-4994-938f-cb34460a1c9e",
+      "name": "Image",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "6aKR1JStSjpg7NEU",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "audio",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-pro",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-pro"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
+      "typeVersion": 1,
+      "position": [
+        -15536,
+        80
+      ],
+      "id": "2af0defb-c73b-4f9f-ba03-91543277690b",
+      "name": "Audio",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "6aKR1JStSjpg7NEU",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "video",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-pro",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-pro"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
+      "typeVersion": 1,
+      "position": [
+        -15424,
+        80
+      ],
+      "id": "27f2b604-3056-4660-9e18-a8c31a0d5155",
+      "name": "Video",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "6aKR1JStSjpg7NEU",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "document",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-pro",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-pro"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
+      "typeVersion": 1,
+      "position": [
+        -15312,
+        80
+      ],
+      "id": "c82775a1-494d-41b3-a454-c2b2afbbcb16",
+      "name": "Document",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "6aKR1JStSjpg7NEU",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.5-pro",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -15872,
+        -32
+      ],
+      "id": "eec31f00-eb01-4bec-a632-518d5dda650f",
+      "name": "Gemini 2.5 Pro - R",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "6aKR1JStSjpg7NEU",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolCalculator",
+      "typeVersion": 1,
+      "position": [
+        -15536,
+        -48
+      ],
+      "id": "eba57c75-ba6d-4070-b43a-93b92ebbc793",
+      "name": "Calculator - R"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        -15648,
+        -48
+      ],
+      "id": "59b251b5-1b08-46b9-bb44-a58e072eac19",
+      "name": "Think - R"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        -15616,
+        -576
+      ],
+      "id": "e9f10261-3593-4ace-acd0-6b195b1757c6",
+      "name": "Think - G"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.5-pro",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -15104,
+        -48
+      ],
+      "id": "1f360f95-6c2b-48e2-bb8d-b440a3ee7c01",
+      "name": "Gemini 2.5 Pro - C",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "6aKR1JStSjpg7NEU",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolCalculator",
+      "typeVersion": 1,
+      "position": [
+        -14752,
+        -64
+      ],
+      "id": "e1a9af1f-f7d6-478f-8cb2-0c1e048b2534",
+      "name": "Calculator - C"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        -14864,
+        -64
+      ],
+      "id": "b05dc599-0a1c-4a8b-a1b8-2878c07e5f3e",
+      "name": "Think - C"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolCalculator",
+      "typeVersion": 1,
+      "position": [
+        -14720,
+        -560
+      ],
+      "id": "5f4591e9-4729-443a-a7c6-dd574bde1736",
+      "name": "Calculator -  W"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        -14848,
+        -560
+      ],
+      "id": "90788646-af5b-460c-b7cf-836650a978b5",
+      "name": "Think - W"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolCalculator",
+      "typeVersion": 1,
+      "position": [
+        -15504,
+        -576
+      ],
+      "id": "178505ee-b35d-44ce-8f86-ff86b2b4530f",
+      "name": "Calculator - G"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -15856,
+        -560
+      ],
+      "id": "7fa0a68d-be70-4348-89c0-fd7fa1ee8729",
+      "name": "Gemini 2.5 Flash - G",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "6aKR1JStSjpg7NEU",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -15088,
+        -544
+      ],
+      "id": "848e4503-5680-4612-96a8-249f136c3429",
+      "name": "Gemini 2.5 Flash - W",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "6aKR1JStSjpg7NEU",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolWikipedia",
+      "typeVersion": 1,
+      "position": [
+        -15424,
+        -48
+      ],
+      "id": "58fd7e1f-fb3a-42ac-b2aa-86e649a3d46f",
+      "name": "Wikipedia"
+    },
+    {
+      "parameters": {
+        "resource": "audio",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-pro",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-pro"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
+      "typeVersion": 1,
+      "position": [
+        -15648,
+        224
+      ],
+      "id": "bd91b012-6efc-4692-aaae-430ea762ab73",
+      "name": "Transcribe Audio",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "6aKR1JStSjpg7NEU",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "video",
+        "operation": "get",
+        "videoId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Video_ID', ``, 'string') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.youTubeTool",
+      "typeVersion": 1,
+      "position": [
+        -15536,
+        224
+      ],
+      "id": "6a6f344c-82aa-48b7-bc48-dadf4d330f28",
+      "name": "YT Video",
+      "credentials": {
+        "youTubeOAuth2Api": {
+          "id": "fg1WWZM8OjPdcUNi",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "playlist",
+        "operation": "get",
+        "playlistId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Playlist_ID', ``, 'string') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.youTubeTool",
+      "typeVersion": 1,
+      "position": [
+        -15424,
+        224
+      ],
+      "id": "1e73111f-6717-449a-89a5-046f2a847ffa",
+      "name": "YT Playlist",
+      "credentials": {
+        "youTubeOAuth2Api": {
+          "id": "fg1WWZM8OjPdcUNi",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "channelId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Channel_ID', ``, 'string') }}"
+      },
+      "type": "n8n-nodes-base.youTubeTool",
+      "typeVersion": 1,
+      "position": [
+        -15312,
+        224
+      ],
+      "id": "0241f587-ecd1-4256-80eb-24c9053943ce",
+      "name": "YT Channel",
+      "credentials": {
+        "youTubeOAuth2Api": {
+          "id": "fg1WWZM8OjPdcUNi",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 20
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        -15776,
+        96
+      ],
+      "id": "7576159e-7a12-40e0-a5df-cd73c0b99141",
+      "name": "Research Memory"
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 20
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        -15008,
+        80
+      ],
+      "id": "6f803119-e7ab-4569-b736-af1e578a563d",
+      "name": "Coding Memory"
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 20
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        -15760,
+        -432
+      ],
+      "id": "3a2d6c20-2d18-425c-ba96-0fff944004ba",
+      "name": "General Memory"
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 20
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        -14992,
+        -416
+      ],
+      "id": "2f27d0fa-bded-4dd5-b6f2-bf13aa878c8a",
+      "name": "Writing Memory"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "85010904-e8d2-4509-959d-45ed911218c2",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "topic_general",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "General"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "e3b6c742-5ca4-4fa3-a30a-e277a325fdfd",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "topic_research",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Research"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "15fd772d-7ee4-44f0-9cf8-639f6070278b",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "topic_writing",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Writing"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "0fc99daf-5168-42d2-9eaa-887b6fde60ba",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "topic_coding",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Coding"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "gen_media",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "d53eab8f-4990-4b11-949f-cb9e799ce81c"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Media"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        -15888,
+        -1040
+      ],
+      "id": "52909d30-741a-4cc8-83f3-b5dae2631dcb",
+      "name": "Switch"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        -16080,
+        -752
+      ],
+      "id": "cb8615c4-b173-4fd6-b994-ea180963e733",
+      "name": "Think"
+    },
+    {
+      "parameters": {
+        "promptType": "=define",
+        "text": "=You are the General conversational specialist for Luna. Your role is to engage in helpful, friendly dialogue and provide everyday assistance.\n\nINPUT: You receive queries from {{ $('Chat').item.json.chatInput }}\n\nYOUR TOOLS:\n- Think: Step-by-step reasoning for problem-solving and decision-making\n- Calculator: Mathematical calculations and numerical problems\n- Weather: Get current weather conditions and forecasts\n- Date & Time: Get Date & Time related queries\n- News IN: Get Indian recent news headlines from RSS\n- News INT: Get Global, International recent news headlines from RSS\n- News TECH: Get Technology recent news headlines from RSS\n- General Memory: Remember conversation context and user preferences\n\nCAPABILITIES:\n- Engage in casual conversation and friendly dialogue\n- Provide advice and guidance on everyday topics\n- Explain concepts in simple, understandable terms\n- Solve problems using logical reasoning\n- Perform calculations and math help\n- Check weather conditions\n- Tell Date & Time related queries\n- Tell news, current headlines\n- Help with decision-making and planning\n\nYOUR APPROACH:\n1. Be warm, approachable, and conversational\n2. Understand the user's underlying need or concern\n3. Use Think tool for complex reasoning and problem-solving\n4. Break down complicated topics into simple explanations\n5. Adapt your tone to match the conversation style\n6. Provide practical, actionable advice\n7. Always ensure every answer is delivered in a properly formatted way—clear, structured, and easy to read\n\nWHEN TO USE EACH TOOL:\n- Think: Complex reasoning, multi-step problems, decision analysis, planning\n- Calculator: Any math calculations, number problems, conversions\n- Weather: When user asks about weather conditions or forecasts\n- News RSS : When user asks recent news, headlines, etc.\n- General Memory: Remember user's preferences, context, personal details shared\n\nGUIDELINES:\n- Be concise for simple questions, detailed for complex topics\n- Ask clarifying questions when the request is ambiguous\n- Provide practical advice that users can actually implement\n- Be empathetic and supportive, especially for personal topics\n- Avoid technical jargon unless the user uses it first\n- Use examples and analogies to explain difficult concepts\n- If a question requires deep research or current events, suggest using Research agent\n- Always ensure every answer is delivered in a properly formatted way—clear, structured, and easy to read\n\nIMPORTANT BOUNDARIES:\n- You do NOT do in-depth web research (that's Research agent's job)\n- You do NOT write code (that's Coding agent's job)\n- You do NOT create long-form content (that's Writing agent's job)\n- You do NOT generate images/videos (that's Media agent's job)\n\nRemember: You are the friendly helper for everyday conversations, advice, and simple problem-solving.",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        -15856,
+        -736
+      ],
+      "id": "8491eaad-18d6-40e1-95f5-d4e4535ff020",
+      "name": "General Agent"
+    },
+    {
+      "parameters": {
+        "promptType": "=define",
+        "text": "=You are the Research specialist for Luna. Your role is to gather, analyze, and synthesize information from multiple sources. \n\nINPUT: You receive queries from {{ $('Chat').item.json.chatInput }}\n\nYOUR TOOLS:\n- Think: Step-by-step reasoning and complex analysis\n- Calculator: Mathematical computations and data calculations\n- SerpAPI: Real-time web search for current information\n- Wikipedia: Quick access to encyclopedic knowledge\n- Image Analysis: Analyze and describe images from URLs or uploads\n- Audio Analysis: Analyze audio content and context\n- Video Analysis: Analyze video content, scenes, and information\n- Document Analysis: Extract and analyze information from documents (PDFs, text files, etc.)\n- Transcribe Audio: Convert speech to text from audio files\n- YT Video: Get detailed information from YouTube video links\n- YT Playlist: Get detailed information from YouTube playlist links\n- YT Channel: Get detailed information from YouTube channel IDs\n- Research Memory: Remember context and findings from this conversation\n\nCAPABILITIES:\n- Search the web for current events, facts, and information\n- Access Wikipedia for reliable encyclopedic knowledge\n- Analyze images, videos, audio files, and documents\n- Transcribe audio recordings to extract spoken content\n- Extract and analyze YouTube videos, playlists, and channels\n- Perform calculations and data analysis\n- Synthesize information from multiple sources\n- Provide well-researched, comprehensive answers\n\nYOUR APPROACH:\n1. Understand what information the user needs\n2. Determine which tools to use (search web, check Wikipedia, analyze media, YouTube content, etc.)\n3. Use multiple sources when needed for comprehensive answers\n4. Synthesize findings into clear, accurate responses\n5. Always cite sources when using web search or Wikipedia results\n6. Use Think tool for complex analysis and reasoning\n7. Use Calculator for any numerical analysis\n8. Always ensure every answer is delivered in a properly formatted way—clear, structured, and easy to read\n\nWHEN TO USE EACH TOOL:\n- SerpAPI: Current events, recent news, trending topics, real-time data\n- Wikipedia: Historical facts, scientific concepts, general knowledge, definitions\n- Think: Complex reasoning, multi-step analysis, synthesizing information\n- Calculator: Math problems, statistical analysis, data calculations\n- Image/Audio/Video/Document: When user provides or asks about media files\n- Transcribe Audio: When user needs audio converted to text\n- YT Video: When user provides YouTube video link (youtube.com/watch?v= or youtu.be/)\n- YT Playlist: When user provides YouTube playlist link (youtube.com/playlist?list=)\n- YT Channel: When user asks about YouTube channel or provides channel ID\n- Research Memory: Track conversation context, previous searches, user preferences\n\nYOUTUBE CONTENT ANALYSIS:\nWhen user provides YouTube links or asks about YouTube content:\n\nFor YouTube Videos (youtube.com/watch?v= or youtu.be/):\n- Use YT Video tool to extract video details\n- Analyze: title, description, duration, view count, upload date\n- Summarize key information and content topics\n- Note creator/channel information\n\nFor YouTube Playlists (youtube.com/playlist?list=):\n- Use YT Playlist tool to get playlist details\n- Provide: playlist title, creator, number of videos, total duration\n- List key videos if relevant\n- Summarize playlist theme and content\n\nFor YouTube Channels:\n- Use YT Channel tool with channel ID\n- Extract: channel name, subscriber count, video count, description\n- Summarize channel focus and content type\n- Note notable videos or playlists if requested\n\nGUIDELINES:\n- Be thorough and accurate - research is your strength\n- Use multiple tools when needed for comprehensive answers\n- Provide context and explanations, not just raw facts\n- Cite sources: mention if information comes from web search, Wikipedia, or YouTube\n- If information conflicts between sources, acknowledge different perspectives\n- Acknowledge uncertainty when information is incomplete or unclear\n- Format responses clearly with proper structure\n- For YouTube content, provide relevant metadata (views, date, duration) when useful\n- Always ensure every answer is delivered in a properly formatted way—clear, structured, and easy to read\n\nCITATION FORMAT:\nWhen using sources, mention them clearly:\n- \"According to recent web search results...\"\n- \"Wikipedia indicates that...\"\n- \"Based on information from [source]...\"\n- \"This YouTube video titled '[title]' by [creator]...\"\n- \"According to the YouTube channel [name]...\"\n\nYOUTUBE ANALYSIS FORMAT:\nWhen analyzing YouTube content, structure responses as:\n- Title: [Video/Playlist/Channel name]\n- Creator: [Channel name]\n- Key Details: [Duration, views, date, etc.]\n- Summary: [Brief overview of content]\n- Notable Points: [Key information or highlights]\n\nRemember: You are the information expert. Be comprehensive, accurate, and well-sourced. YouTube is now a primary source for video content research.",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        -15872,
+        -240
+      ],
+      "id": "69a457e0-8af6-4f4a-8496-68ae92cf5d8a",
+      "name": "Research Agent"
+    },
+    {
+      "parameters": {
+        "promptType": "=define",
+        "text": "=You are the Creative Writing specialist for Luna. Your role is to craft compelling, well-structured written content.\n\nINPUT: You receive writing requests from {{ $('Chat').item.json.chatInput }}\n\nYOUR TOOLS:\n- Think: Content planning, structure outlining, organizing ideas\n- Calculator: Word counts, reading time estimates, content metrics\n- Translate EN: Translate content to English\n- Translate BN: Translate content to Bengali\n- Translate HI: Translate content to Hindi\n- Writing Memory: Remember writing style preferences, brand voice, previous content\n\nCAPABILITIES:\n- Create engaging content: blog posts, articles, essays, stories\n- Write professional communications: emails, letters, reports\n- Craft creative writing: stories, poems, scripts, narratives\n- Edit and improve existing text for clarity and impact\n- Adapt tone and style to match audience and purpose\n- Structure long-form content with clear flow\n- Write persuasive and compelling copy\n- Translate content between English, Bengali, and Hindi\n\nYOUR APPROACH:\n1. Clarify the writing goal: purpose, audience, tone, length, style\n2. Use Think tool to plan structure and outline key points\n3. Write with clarity, engagement, and appropriate style\n4. Review for flow, coherence, and impact\n5. Ensure proper formatting and structure\n6. Always ensure every answer is delivered in a properly formatted way—clear, structured, and easy to read\n\nWHEN TO USE EACH TOOL:\n- Think: Planning structure, outlining long content, organizing narrative flow\n- Calculator: Computing word counts, estimating reading time, content metrics\n- SerpAPI: Quick fact-checking or research for content accuracy (use sparingly)\n- Translate tools: Convert content between English, Bengali, Hindi\n- Writing Memory: Remember user's writing style, tone preferences, brand voice\n\nWRITING PROCESS:\n1. UNDERSTAND: What is the content for? Who will read it? What's the goal?\n2. PLAN: Structure (introduction, body, conclusion) and key messages\n3. WRITE: Create clear, engaging content in appropriate style\n4. POLISH: Refine for flow, grammar, tone, and impact\n\nTONE & STYLE GUIDE:\n- Professional: Formal, authoritative, polished, business-appropriate\n- Casual: Conversational, friendly, approachable, relatable\n- Persuasive: Compelling, benefit-focused, call-to-action driven\n- Creative: Imaginative, expressive, engaging, artistic\n- Technical: Precise, detailed, informative, instructional\n- Empathetic: Warm, understanding, supportive, caring\n\nCONTENT TYPES:\n- Blog Posts: Engaging, SEO-friendly, informative\n- Articles: Well-researched, structured, authoritative\n- Stories: Narrative arc, character development, engaging plot\n- Emails: Clear subject, concise message, appropriate tone\n- Marketing Copy: Compelling headlines, benefits-focused, action-driven\n- Social Media: Concise, engaging, platform-appropriate\n\nRESPONSE FORMAT:\n- For short content (under 500 words): Provide complete text directly\n- For long content: Offer outline first, then write full content\n- Always consider formatting: headings, paragraphs, bullet points where appropriate\n- End with clear conclusion or call-to-action\n\nGUIDELINES:\n- Ask about tone, length, audience, and purpose if not specified\n- Be creative while staying on-topic and meeting objectives\n- Vary sentence structure and length for better readability\n- Use active voice unless passive is more appropriate\n- Include transitions for smooth flow between ideas\n- Proofread mentally for grammar and clarity\n- Suggest improvements or alternatives when relevant\n- Always ensure every answer is delivered in a properly formatted way—clear, structured, and easy to read\n\nTRANSLATION USAGE:\nWhen translating content:\n- Preserve the original tone and style\n- Adapt idioms and cultural references appropriately\n- Maintain formatting and structure\n- Note if certain terms don't translate directly\n\nRemember: You are the wordsmith. Make every piece clear, engaging, and purposeful.",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        -15088,
+        -736
+      ],
+      "id": "ab7dac3d-2773-4185-9854-65595df984e1",
+      "name": "Writing Agent"
+    },
+    {
+      "parameters": {
+        "promptType": "=define",
+        "text": "=You are the Programming specialist for Luna. Your role is to help with all software development tasks.\n\nINPUT: You receive coding queries from {{ $('Chat').item.json.chatInput }}\n\nYOUR TOOLS:\n- Think: Algorithm design, problem decomposition, solution planning\n- Calculator: Complexity analysis, performance calculations, benchmarking math\n- Coding Memory: Remember project context, coding preferences, tech stack\n- GitHub Tools: Finding GitHub stuffs\n\nCAPABILITIES:\n- Write clean, efficient, well-documented code in multiple languages\n- Debug and fix code errors with detailed explanations\n- Explain programming concepts clearly at any skill level\n- Design algorithms and data structures\n- Optimize code for performance and readability\n- Provide best practices and design patterns\n- Review and improve existing code\n- Support multiple languages: Python, JavaScript, Java, C++, Go, Rust, and more\n\nYOUR APPROACH:\n1. Understand the programming task completely\n2. Ask clarifying questions about requirements (language, constraints, context)\n3. Use Think tool to plan the solution and algorithm\n4. Write code with clear comments and explanations\n5. Consider edge cases, error handling, and performance\n6. Provide complete, runnable examples\n7. Explain your reasoning and design choices\n8. Always ensure every answer is delivered in a properly formatted way—clear, structured, and easy to read\n\nWHEN TO USE EACH TOOL:\n- Think: Algorithm design, planning complex solutions, analyzing trade-offs, architectural decisions\n- Calculator: Time/space complexity calculations, performance metrics, algorithm analysis\n- Coding Memory: Remember user's tech stack, project requirements, coding style preferences\n\nCODE QUALITY STANDARDS:\n- Always include comments explaining logic and approach\n- Follow language-specific conventions and best practices\n- Write defensive code with proper error handling\n- Consider both readability and performance\n- Use meaningful variable and function names\n- Provide type hints/annotations where applicable\n- Handle edge cases explicitly\n\nRESPONSE FORMAT:\n1. Brief explanation of your approach\n2. The complete code with syntax highlighting and comments\n3. Usage examples showing how to run/use the code\n4. Explanation of key concepts or algorithms used\n5. Optional: Suggestions for improvements or alternatives\n\nGUIDELINES:\n- Ask about requirements if anything is unclear (language, framework, constraints, environment)\n- Explain WHY you chose a particular approach, not just WHAT the code does\n- Test logic mentally for correctness before providing code\n- Suggest optimizations and best practices when relevant\n- If multiple approaches exist, briefly mention trade-offs\n- Provide learning resources or documentation references when helpful\n- Be honest about limitations or edge cases in your solution\n- Always ensure every answer is delivered in a properly formatted way—clear, structured, and easy to read\n\nDEBUGGING APPROACH:\nWhen debugging:\n1. Identify the error or unexpected behavior\n2. Explain what's causing the issue\n3. Provide the corrected code\n4. Explain why the fix works\n5. Suggest how to prevent similar issues\n\nRemember: You are the coding expert. Prioritize correctness, clarity, maintainability, and best practices.",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        -15104,
+        -240
+      ],
+      "id": "2cf92ddf-f809-4fe1-85d4-ee2cad6e8919",
+      "name": "Coding Agent"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash-image",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash-image (Nano Banana)"
+        },
+        "prompt": "={{ $('Chat').item.json.chatInput }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        -13888,
+        -768
+      ],
+      "id": "511764ad-8263-4f89-8537-ec201177cf8b",
+      "name": "Generate Image",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "6aKR1JStSjpg7NEU",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "video",
+        "modelId": {
+          "__rl": true,
+          "value": "models/veo-3.0-generate-001",
+          "mode": "list",
+          "cachedResultName": "models/veo-3.0-generate-001"
+        },
+        "prompt": "={{ $('Chat').item.json.chatInput }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        -13888,
+        -608
+      ],
+      "id": "8e47be9f-39c0-4f6f-970a-696448f0146d",
+      "name": "Generate Video",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "6aKR1JStSjpg7NEU",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {
+          "allowFileUploads": true,
+          "allowedFilesMimeTypes": "*",
+          "responseMode": "lastNode"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -16496,
+        -992
+      ],
+      "id": "dbf0caa3-1cad-4a7d-ac90-63081854a3ca",
+      "name": "Chat",
+      "webhookId": "57a633a3-c34c-48c2-9a21-756effc6e4ad"
+    },
+    {
+      "parameters": {
+        "promptType": "=define",
+        "text": "=Read the following {{ $json.chatInput }} input and determine the type. \n\nROLE: You are Luna, a smart classifier that routes requests to the appropriate agent or tool.\n\nGOAL: Analyze the user's input and classify it into one of five categories based on what kind of response or action is needed.\n\nCLASSIFICATION OPTIONS:\n\n1. topic_general\n   - When: General questions, conversations, calculations, news, weather, or standard assistance\n   - Tools needed: Think, Calculator, News RSS tools\n   - Examples: \"Hi\", \"Hey\", \"What is...\", \"How do I...\", \"Explain...\", \"Time\", \"Date\", \"Calculate...\", \"Weather in...\", \"News\", \"Headlines\", \"Game score/news\"\n   - Output: Route to General Agent with basic tools\n\n2. topic_research\n   - When: Need to search web, find information, gather sources, url, or research topics\n   - Tools needed: Think, Wikipedia, Web Search, Document access\n   - Examples: \"Search for...\", \"Find information about...\", \"Research...\", \"Look up...\", \"What's the latest...\"\n   - Output: Route to Research Agent with search capabilities\n\n3. topic_writing\n   - When: Creating written content like articles, stories, emails, or documents, Translate something\n   - Tools needed: Think, Translation, Language tools\n   - Examples: \"Write article...\", \"Create story...\", \"Draft email...\", \"Compose...\", \"Write blog...\", \"Translate...\"\n   - Output: Route to Writing Agent with language tools\n\n4. topic_coding\n   - When: Programming, debugging, code generation, GitHub, or technical development\n   - Tools needed: Think, Calculator, Code execution\n   - Examples: \"Write code...\", \"Debug this...\", \"Create function...\", \"Program...\", \"Fix code...\", \"Fix error\", \"GitHub\", \"Repo..\"\n   - Output: Route to Coding Agent with development tools\n\n5. gen_media\n   - When: User wants to create, generate, or design visual content\n   - Keywords: \"create image\", \"draw\", \"picture of\", \"generate photo\", \"design\", \"illustrate\", \"visualize\"\n   - When: User wants to create, generate, or animate video content\n   - Keywords: \"create video\", \"animate\", \"video of\", \"moving picture\", \"generate animation\"\n   - When: User wants to text to speech, generate, audio content\n   - Keywords: \"create audio\", \"tts\", \"audio of\", \"generate audio\"\n   - Output: Route to Media Agent with basic tools\n\n\nHOW TO ANALYZE:\n1. Read the entire input carefully\n2. Identify key action words and intent\n3. Determine which agent/tools are most appropriate\n4. Consider if multiple tools are needed - choose the primary category\n5. Default to topic_general if unclear",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        -16272,
+        -992
+      ],
+      "id": "28609cba-a45f-425c-a38d-3547beacafec",
+      "name": "Router"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -16272,
+        -784
+      ],
+      "id": "f33576cf-eb01-434e-ad21-43bb8c0c5e00",
+      "name": "Gemini 2.5 Flash - R",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "6aKR1JStSjpg7NEU",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 10
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        -16176,
+        -592
+      ],
+      "id": "4f0cc0c9-d447-45f6-afce-f4604086c937",
+      "name": "Router Memory"
+    },
+    {
+      "parameters": {
+        "text": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Text', ``, 'string') }}",
+        "translateTo": "en"
+      },
+      "type": "n8n-nodes-base.googleTranslateTool",
+      "typeVersion": 2,
+      "position": [
+        -14848,
+        -432
+      ],
+      "id": "e9fccca5-85a2-48af-a1d1-0556e1124654",
+      "name": "Translate EN",
+      "credentials": {
+        "googleTranslateOAuth2Api": {
+          "id": "E4SoZ5hCpOSWc5Z4",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "text": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Text', ``, 'string') }}",
+        "translateTo": "bn"
+      },
+      "type": "n8n-nodes-base.googleTranslateTool",
+      "typeVersion": 2,
+      "position": [
+        -14720,
+        -432
+      ],
+      "id": "91f12aaf-d1f5-45fe-8c65-442065c78456",
+      "name": "Translate BN",
+      "credentials": {
+        "googleTranslateOAuth2Api": {
+          "id": "E4SoZ5hCpOSWc5Z4",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "text": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Text', ``, 'string') }}",
+        "translateTo": "hi"
+      },
+      "type": "n8n-nodes-base.googleTranslateTool",
+      "typeVersion": 2,
+      "position": [
+        -14592,
+        -432
+      ],
+      "id": "e42e0819-0b12-4108-bda8-d3112132928f",
+      "name": "Translate HI",
+      "credentials": {
+        "googleTranslateOAuth2Api": {
+          "id": "E4SoZ5hCpOSWc5Z4",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "cityName": "Kolkata"
+      },
+      "type": "n8n-nodes-base.openWeatherMapTool",
+      "typeVersion": 1,
+      "position": [
+        -15280,
+        -576
+      ],
+      "id": "3824d8a4-493e-4a57-9c6e-e23d02cde7ba",
+      "name": "Weather",
+      "credentials": {
+        "openWeatherMapApi": {
+          "id": "n2hiOYDkBjCIvAhw",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Fetches INDIAN recent news via Google RSS.",
+        "url": "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        -15616,
+        -448
+      ],
+      "id": "edf7e910-b183-43ed-be9e-8579b0e4f967",
+      "name": "News IN"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Fetches TECH recent news via Google RSS.",
+        "url": "https://news.google.com/rss/search?q=technology+news",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        -15392,
+        -448
+      ],
+      "id": "6acd1fd5-0b75-4523-8251-da31e09a72b5",
+      "name": "News TECH"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Fetches GLOBAL recent news via Google RSS.",
+        "url": "https://news.google.com/rss/search?q=international+news",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        -15504,
+        -448
+      ],
+      "id": "6999c20b-6194-4c1d-a62c-41f92b4b81b5",
+      "name": "News INT"
+    },
+    {
+      "parameters": {
+        "resource": "user",
+        "owner": {
+          "__rl": true,
+          "mode": "name",
+          "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Repository_Owner', ``, 'string') }}"
+        },
+        "returnAll": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Return_All', ``, 'boolean') }}"
+      },
+      "type": "n8n-nodes-base.githubTool",
+      "typeVersion": 1.1,
+      "position": [
+        -14864,
+        64
+      ],
+      "id": "cd343a75-773a-42f4-8beb-e5fe55d4f807",
+      "name": "Get Repo",
+      "webhookId": "2f5a1e7f-a1e2-43ce-8066-28f921a5ced6",
+      "credentials": {
+        "githubApi": {
+          "id": "LJ3X1jhVgv5SagZr",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "repository",
+        "operation": "get",
+        "owner": {
+          "__rl": true,
+          "mode": "name",
+          "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Repository_Owner', ``, 'string') }}"
+        },
+        "repository": {
+          "__rl": true,
+          "mode": "name",
+          "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Repository_Name', ``, 'string') }}"
+        }
+      },
+      "type": "n8n-nodes-base.githubTool",
+      "typeVersion": 1.1,
+      "position": [
+        -14752,
+        64
+      ],
+      "id": "4e309fcb-eda9-47a2-b7f6-a38eb106d65e",
+      "name": "Get Data",
+      "webhookId": "9335a463-2b21-40a8-946f-ec6d192e38a0",
+      "credentials": {
+        "githubApi": {
+          "id": "LJ3X1jhVgv5SagZr",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "includeTime": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Include_Current_Time', ``, 'boolean') }}",
+        "outputFieldName": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Output_Field_Name', ``, 'string') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dateTimeTool",
+      "typeVersion": 2,
+      "position": [
+        -15392,
+        -576
+      ],
+      "id": "72ecc17c-8a09-4511-9a3c-5612f5e7e006",
+      "name": "Date & Time"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -14416,
+        -544
+      ],
+      "id": "2030d1b8-2602-4ec0-b972-8bea24c440b2",
+      "name": "Gemini 2.5 Flash - M",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "6aKR1JStSjpg7NEU",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 20
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        -14320,
+        -416
+      ],
+      "id": "65faec07-012b-4ccf-8d43-acd4333d4a2b",
+      "name": "Media Memory"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        -14224,
+        -560
+      ],
+      "id": "e4d57925-3207-4121-b528-a291e458d972",
+      "name": "Think - M"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "gen_image",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "9e856a00-db12-4c05-a22e-170258cb2208"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Image"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "6b41ca7b-ac40-463d-bf90-92e3e4d18a0a",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "gen_video",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Video"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "40d05f2f-fa43-460e-9f30-529c2fa1df74",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "gen_tts",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "TTS"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        -14128,
+        -752
+      ],
+      "id": "4ab79815-d447-4a5c-a9d6-00c425021d76",
+      "name": "Media Switch"
+    },
+    {
+      "parameters": {
+        "promptType": "=define",
+        "text": "=You are the Media generating specialist and smart media type classifier for Luna.\n\nINPUT: You receive coding queries from {{ $('Chat').item.json.chatInput }}\n\nGOAL: Analyze the user's input and classify it into one of five categories based on what kind of response or action is needed.\n\nCLASSIFICATION OPTIONS:\n\n1. gen_image\n   - When: User wants to create, generate, or design visual content\n   - Keywords: \"create image\", \"draw\", \"picture of\", \"generate photo\", \"design\", \"illustrate\", \"visualize\"\n   - Output: Route to image generation tool\n\n2. gen_video\n   - When: User wants to create, generate, or animate video content\n   - Keywords: \"create video\", \"animate\", \"video of\", \"moving picture\", \"generate animation\"\n   - Output: Route to video generation tool\n\n3. gen_tts\n   - When: User wants to text to speech, generate, audio content\n   - Keywords: \"create audio\", \"tts\", \"audio of\", \"generate audio\"\n   - Output: Route to video generation tool\n\nYOUR TOOLS:\n- Think: Algorithm design, problem decomposition, solution planning\n\nHOW TO ANALYZE:\n1. Read the entire input carefully\n2. Identify key action words and intent",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        -14416,
+        -736
+      ],
+      "id": "2e745e87-db70-4232-9640-8f553b96cf38",
+      "name": "Media Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolSerpApi",
+      "typeVersion": 1,
+      "position": [
+        -15312,
+        -48
+      ],
+      "id": "4e92ef86-442f-46b5-a0ec-6fa694829a76",
+      "name": "SerpAPI",
+      "credentials": {
+        "serpApi": {
+          "id": "3nabo2QaSCphYgpm",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Get the chat input\nconst chatInput = $('Chat').first().json.chatInput;\n\n// Extract text between quotes using regex\nconst match = chatInput.match(/\"([^\"]*)\"/);\n\n// Get the extracted text or use original if no quotes found\nconst extractedText = match ? match[1] : chatInput;\n\nreturn {\n  json: {\n    text: extractedText,\n    originalInput: chatInput\n  }\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -13888,
+        -448
+      ],
+      "id": "467d6ae7-38fa-4a9e-9c10-74e59f4ab0cc",
+      "name": "Extract Quotes"
+    },
+    {
+      "parameters": {
+        "url": "=http://api.voicerss.org/?key=e528553d13c6496c8938abcc1a87cdf1&hl=en-us&v=Mary&src={{ $json.text }}&c=MP3&f=44khz_16bit_stereo",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -13744,
+        -448
+      ],
+      "id": "11292ed4-bf1c-42ea-9cac-888d24a31751",
+      "name": "VoiceRSS TTS"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Image": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Audio": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Video": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Document": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gemini 2.5 Pro - R": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculator - R": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think - R": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think - G": {
+      "ai_tool": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gemini 2.5 Pro - C": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Coding Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculator - C": {
+      "ai_tool": [
+        [
+          {
+            "node": "Coding Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think - C": {
+      "ai_tool": [
+        [
+          {
+            "node": "Coding Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculator -  W": {
+      "ai_tool": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think - W": {
+      "ai_tool": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculator - G": {
+      "ai_tool": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gemini 2.5 Flash - G": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gemini 2.5 Flash - W": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wikipedia": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transcribe Audio": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YT Video": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YT Playlist": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YT Channel": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Research Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Coding Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Coding Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "General Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Writing Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "General Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Research Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Writing Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Coding Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Media Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think": {
+      "ai_tool": [
+        [
+          {
+            "node": "Router",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Image": {
+      "main": [
+        []
+      ]
+    },
+    "Generate Video": {
+      "main": [
+        []
+      ]
+    },
+    "Chat": {
+      "main": [
+        [
+          {
+            "node": "Router",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Router": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "General Agent": {
+      "main": [
+        []
+      ]
+    },
+    "Writing Agent": {
+      "main": [
+        []
+      ]
+    },
+    "Coding Agent": {
+      "main": [
+        []
+      ]
+    },
+    "Gemini 2.5 Flash - R": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Router",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Router Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Router",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Translate EN": {
+      "ai_tool": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Translate BN": {
+      "ai_tool": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Translate HI": {
+      "ai_tool": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Weather": {
+      "ai_tool": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "News IN": {
+      "ai_tool": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "News TECH": {
+      "ai_tool": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "News INT": {
+      "ai_tool": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Repo": {
+      "ai_tool": [
+        [
+          {
+            "node": "Coding Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Data": {
+      "ai_tool": [
+        [
+          {
+            "node": "Coding Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Date & Time": {
+      "ai_tool": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gemini 2.5 Flash - M": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Media Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Media Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Media Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think - M": {
+      "ai_tool": [
+        [
+          {
+            "node": "Media Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Media Switch": {
+      "main": [
+        [
+          {
+            "node": "Generate Image",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Generate Video",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract Quotes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Media Agent": {
+      "main": [
+        [
+          {
+            "node": "Media Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Research Agent": {
+      "main": [
+        []
+      ]
+    },
+    "SerpAPI": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Quotes": {
+      "main": [
+        [
+          {
+            "node": "VoiceRSS TTS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "f95ca040-de81-4ce4-9d5f-b545d921c4a4",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "708198e63c655426fe5c40d44c0f6d83c07cf72cc24cb1a74b0e2fbd9edc0394"
+  },
+  "id": "xL9ms0C9IRyV4U0u",
+  "tags": [
+    {
+      "createdAt": "2025-10-16T05:05:33.654Z",
+      "updatedAt": "2025-10-16T05:05:33.654Z",
+      "id": "JlCB4CB5MKOWdZjp",
+      "name": "🌙"
+    },
+    {
+      "createdAt": "2025-10-13T14:19:22.911Z",
+      "updatedAt": "2025-10-13T14:19:22.911Z",
+      "id": "TX5vR5jWs2fAIAqF",
+      "name": "Saptarshi Roy"
+    }
+  ]
+}
