@@ -29,7 +29,7 @@
 
 Luna AI uses a sophisticated multi-agent architecture with intelligent routing:
 
-![Luna AI Workflow](workflow-overview.png)
+![Luna AI Workflow](Luna-AI.png)
 
 ---
 
