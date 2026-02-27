@@ -47,5 +47,5 @@ Luna AI uses a sophisticated multi-agent architecture with intelligent routing:
 ---
 
 <p align="center">
-  Made with <a href="https://n8n.io">n8n</a> by Saptarshi Roy
+  Made with 💙 by <a href="https://hirishi.in/">Saptarshi Roy</a>
 </p>
