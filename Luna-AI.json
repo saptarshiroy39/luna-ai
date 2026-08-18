@@ -1,0 +1,2479 @@
+{
+  "name": "Luna AI",
+  "nodes": [
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-3.1-flash-lite",
+          "mode": "list",
+          "cachedResultName": "models/gemini-3.1-flash-lite"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
+      "typeVersion": 1,
+      "position": [
+        240,
+        1120
+      ],
+      "id": "e4a53b1c-a527-4ceb-8587-445fa1df161e",
+      "name": "Image",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "audio",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-3.1-flash-lite",
+          "mode": "list",
+          "cachedResultName": "models/gemini-3.1-flash-lite"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
+      "typeVersion": 1,
+      "position": [
+        352,
+        1120
+      ],
+      "id": "90e54ccf-c716-481c-820b-84759f6827ed",
+      "name": "Audio",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "video",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-3.1-flash-lite",
+          "mode": "list",
+          "cachedResultName": "models/gemini-3.1-flash-lite"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
+      "typeVersion": 1,
+      "position": [
+        464,
+        1120
+      ],
+      "id": "598fd37f-4cf4-49c3-a82d-628adefc9847",
+      "name": "Video",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "document",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-3.1-flash-lite",
+          "mode": "list",
+          "cachedResultName": "models/gemini-3.1-flash-lite"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
+      "typeVersion": 1,
+      "position": [
+        576,
+        1120
+      ],
+      "id": "25734be9-c1bf-472e-9ec1-8f541f3f90c1",
+      "name": "Document",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolCalculator",
+      "typeVersion": 1,
+      "position": [
+        352,
+        992
+      ],
+      "id": "b4f4437d-76c5-4985-a2c7-af84dc8842f0",
+      "name": "Calculator - R"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        240,
+        992
+      ],
+      "id": "e09ac8ff-e987-40ab-b320-0ed7e1d1f843",
+      "name": "Think - R"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        272,
+        464
+      ],
+      "id": "d0215b39-b075-410d-86cb-999cc3c79454",
+      "name": "Think - G"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolCalculator",
+      "typeVersion": 1,
+      "position": [
+        1136,
+        976
+      ],
+      "id": "581bf940-6365-4a2f-b741-7bab54da215b",
+      "name": "Calculator - C"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        1024,
+        976
+      ],
+      "id": "8029af0d-6c04-4d4e-8619-112dc5877f4c",
+      "name": "Think - C"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolCalculator",
+      "typeVersion": 1,
+      "position": [
+        1168,
+        480
+      ],
+      "id": "c01c247d-1849-40d9-a4ad-2bfcab4e5913",
+      "name": "Calculator -  W"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        1040,
+        480
+      ],
+      "id": "9aaa5c2f-f0a1-4692-9b28-738f3bd729f0",
+      "name": "Think - W"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolCalculator",
+      "typeVersion": 1,
+      "position": [
+        384,
+        464
+      ],
+      "id": "98c9388a-0719-491f-90df-3d6e7de7f18c",
+      "name": "Calculator - G"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolWikipedia",
+      "typeVersion": 1,
+      "position": [
+        464,
+        992
+      ],
+      "id": "c7aaa4d4-924c-4b87-93f2-9e030efc5bb1",
+      "name": "Wikipedia"
+    },
+    {
+      "parameters": {
+        "resource": "audio",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-3.1-flash-lite",
+          "mode": "list",
+          "cachedResultName": "models/gemini-3.1-flash-lite"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
+      "typeVersion": 1,
+      "position": [
+        240,
+        1264
+      ],
+      "id": "83485d3a-6a0b-47b3-ae15-0d791d7fd34d",
+      "name": "Transcribe Audio",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "video",
+        "operation": "get",
+        "videoId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Video_ID', ``, 'string') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.youTubeTool",
+      "typeVersion": 1,
+      "position": [
+        352,
+        1264
+      ],
+      "id": "b36a1117-6b1a-4ff1-8424-cb29bea17dfd",
+      "name": "YT Video",
+      "credentials": {
+        "youTubeOAuth2Api": {
+          "id": "oiJaHzN18UqhTFmH",
+          "name": "YT - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "playlist",
+        "operation": "get",
+        "playlistId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Playlist_ID', ``, 'string') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.youTubeTool",
+      "typeVersion": 1,
+      "position": [
+        464,
+        1264
+      ],
+      "id": "748d77e9-bcef-46a0-a46c-72c959db5705",
+      "name": "YT Playlist",
+      "credentials": {
+        "youTubeOAuth2Api": {
+          "id": "oiJaHzN18UqhTFmH",
+          "name": "YT - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "channelId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Channel_ID', ``, 'string') }}"
+      },
+      "type": "n8n-nodes-base.youTubeTool",
+      "typeVersion": 1,
+      "position": [
+        576,
+        1264
+      ],
+      "id": "b788f2a6-66eb-4418-9c7d-56592e6e0b52",
+      "name": "YT Channel",
+      "credentials": {
+        "youTubeOAuth2Api": {
+          "id": "oiJaHzN18UqhTFmH",
+          "name": "YT - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 20
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        112,
+        1136
+      ],
+      "id": "d528ae09-3cb6-46eb-b948-1379d2beac06",
+      "name": "Research Memory"
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 20
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        880,
+        1120
+      ],
+      "id": "48b1409c-569e-4420-9725-1f9b5e8096df",
+      "name": "Coding Memory"
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 20
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        128,
+        608
+      ],
+      "id": "e694b4a5-dafc-42e8-9fa6-894465878690",
+      "name": "General Memory"
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 20
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        896,
+        624
+      ],
+      "id": "6ac09f8b-b06a-4712-a6eb-3be657fd6f1d",
+      "name": "Writing Memory"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "85010904-e8d2-4509-959d-45ed911218c2",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "topic_general",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "General"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "e3b6c742-5ca4-4fa3-a30a-e277a325fdfd",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "topic_research",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Research"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "15fd772d-7ee4-44f0-9cf8-639f6070278b",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "topic_writing",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Writing"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "0fc99daf-5168-42d2-9eaa-887b6fde60ba",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "topic_coding",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Coding"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "gen_media",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "d53eab8f-4990-4b11-949f-cb9e799ce81c"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Media"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "196f5246-940d-4111-9f68-f05ef0dd97f8",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "topic_news",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "News"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        0,
+        0
+      ],
+      "id": "914a2a5d-602e-4c27-9587-aacc6a2cb4c6",
+      "name": "Switch"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        -192,
+        288
+      ],
+      "id": "d330f14a-8711-4953-a0cd-5088b785cb00",
+      "name": "Think"
+    },
+    {
+      "parameters": {
+        "promptType": "=define",
+        "text": "=ROLE: You are the General Conversational Specialist for Luna. Your role is to engage in helpful, friendly dialogue and provide everyday assistance.\n\nINPUT FORMAT: You receive user inputs via {{ $('Chat').item.json.chatInput }}.\n\nAVAILABLE TOOLS:\n- Think: Use for step-by-step reasoning, decision analysis, and multi-step problem solving.\n- Calculator: Math calculations, numerical problems, and unit conversions.\n- Weather: Current weather conditions and forecasts.\n- Date & Time: Current date, time, and timezone queries.\n- General Memory: Storing/retrieving conversation context and user preferences.\n\nTOOL TRIGGER RULE:\n- Execute Weather or Date/Time tools immediately on turn 1 when requested. Do not ask for confirmation.\n\nCAPABILITIES:\n- Casual conversation, friendly dialogue, and practical everyday advice.\n- Simple concept explanations using clear language and analogies.\n- Logical problem-solving, planning, and basic math calculations.\n- Weather updates and date/time queries.\n\nAPPROACH & BEHAVIOR:\n1. Direct & Confident: Give direct answers upfront before expanding into detail.\n2. Adaptability: Match the user's tone—warm and empathetic for personal topics, clear and structured for factual queries.\n3. Clarity: Avoid unnecessary technical jargon unless introduced by the user. Use bold text and clean lists for scannability.\n4. Tool Selection Rules:\n   - Use Calculator for non-trivial arithmetic or conversions.\n   - Use Weather, Date & Time tools immediately when explicitly asked.\n   - Use Think before executing complex multi-step logical tasks.\n\nSTRICT BOUNDARIES:\n- DO NOT report news headlines or current events (Defer/suggest: News Agent).\n- DO NOT perform deep web research or URL scraping (Defer/suggest: Research Agent).\n- DO NOT write, debug, or execute code (Defer/suggest: Coding Agent).\n- DO NOT generate long-form articles, essays, or stories (Defer/suggest: Writing Agent).\n- DO NOT generate visual or audio media (Defer/suggest: Media Agent).\n\nFORMATTING REQUIREMENTS:\n- Use standard Markdown (bolding, simple lists) for clarity.\n- Avoid unnecessary conversational introductory fluff.\n- Do not add explicit summary headers (e.g., \"Summary:\" or \"In Conclusion:\") at the end of responses.",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        32,
+        304
+      ],
+      "id": "eeb5b0c8-b068-485b-8345-ac17dad40d85",
+      "name": "General Agent"
+    },
+    {
+      "parameters": {
+        "promptType": "=define",
+        "text": "=ROLE: You are the Research Specialist for Luna. Your role is to gather, analyze, and synthesize information from web searches, encyclopedic bases, media files, and YouTube resources into structured, accurate answers.\n\nINPUT FORMAT: You receive research queries via {{ $('Chat').item.json.chatInput }}.\n\nAVAILABLE TOOLS:\n- Think: Multi-step reasoning, evidence synthesis, and complex decision analysis.\n- SerpAPI: Web search for real-time news, current events, live stats, and trending information.\n- Wikipedia: Historical facts, scientific concepts, biographies, and general encyclopedic entries.\n- Calculator: Numerical calculations, data processing, and statistical analysis.\n- Image Analysis / Audio Analysis / Video Analysis / Document Analysis: Extracting insights from provided files (images, audio, video, PDFs, text files).\n- Transcribe Audio: Speech-to-text processing for audio content.\n- YT Video: Extracting metadata, transcripts, and context from YouTube video links (`youtube.com/watch?v=` or `youtu.be/`).\n- YT Playlist: Processing YouTube playlist links (`youtube.com/playlist?list=`).\n- YT Channel: Extracting channel statistics, video catalog data, and channel details.\n- Research Memory: Storing and retrieving context from prior queries within the session.\n\nURL DETECT RULES:\n- Detect YouTube URLs -> Execute YT Video / YT Playlist tool directly.\n- Detect live queries / real-time topics -> Execute SerpAPI immediately.\n\nRESEARCH & SYNTHESIS APPROACH:\n1. Identify Knowledge Scope: Determine whether real-time web search, encyclopedic data, YouTube extractions, or document analysis is required.\n2. Multi-Source Verification: When dealing with ambiguous or conflicting topics, cross-check findings across multiple sources and highlight key perspectives.\n3. Logical Planning (Think): Use `Think` for complex queries that require step-by-step reasoning or combining data from multiple tools.\n\nTOOL TRIGGER RULES:\n- Use SerpAPI for real-time, time-sensitive, or breaking information.\n- Use Wikipedia for background, foundational concepts, or history.\n- Use YT Video / Playlist / Channel tools immediately when a YouTube URL or channel query is detected.\n- Use Calculator whenever precise numeric or data manipulation is needed.\n\nCITATION & ATTRIBUTION REQUIREMENTS:\n- Always cite source types clearly in text (e.g., \"According to recent search results...\", \"Wikipedia details that...\", \"In the video '[Title]' by [Creator]...\").\n- Acknowledge source gaps or uncertainty explicitly if evidence is conflicting or unavailable.\n\nYOUTUBE ANALYSIS STRUCTURE:\nWhen reporting on YouTube content, structure the response cleanly:\n- Title: [Content Name]\n- Creator: [Channel Name]\n- Details: [Upload Date, Duration, View Count if relevant]\n- Summary: [Concise synthesis of key topics/transcript]\n- Highlights: [Bullet points of main takeaways]\n\nSTRICT BOUNDARIES:\n- DO NOT execute code or debug software (Defer to: Coding Agent).\n- DO NOT generate creative fiction, poetry, or marketing drafts (Defer to: Writing Agent).\n- DO NOT generate visual or audio media files (Defer to: Media Agent).\n\nFORMATTING REQUIREMENTS:\n- Use Markdown headers (`##`), bolding, and bulleted lists for scannability.\n- Keep direct answers at the top of the response before detailing supporting evidence.\n- Avoid redundant concluding wrap-ups (e.g., \"In summary\" or \"To conclude\").",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        16,
+        800
+      ],
+      "id": "b7591a1e-350d-4704-9126-18672eec9c69",
+      "name": "Research Agent"
+    },
+    {
+      "parameters": {
+        "promptType": "=define",
+        "text": "=ROLE: You are the Creative Writing Specialist for Luna. Your role is to craft compelling, well-structured, and purposeful written content across multiple styles and formats.\n\nINPUT FORMAT: You receive writing requests via {{ $('Chat').item.json.chatInput }}.\n\nAVAILABLE TOOLS:\n- Think: Outlining, structural planning, and narrative flow organization.\n- Calculator: Computing word counts, reading time estimates, or content metrics.\n- Translate EN: Translate content to English.\n- Translate BN: Translate content to Bengali.\n- Translate HI: Translate content to Hindi.\n- Writing Memory: Storing and retrieving brand voice, writing style, and tone preferences.\n\nCAPABILITIES:\n- Long-form and short-form creation: blog posts, articles, essays, stories, scripts, and poems.\n- Business & professional copy: emails, letters, reports, and marketing copy.\n- Editing & proofreading: improving clarity, tone, and sentence variety.\n- Translation: converting content smoothly between English, Bengali, and Hindi with cultural nuances preserved.\n\nTHINKING & LENGTH CONSTRAINTS:\n- For content under 500 words: Generate draft directly without an outline.\n- For long-form content (>500 words): Provide a brief 3-bullet structure first, then immediately output the full content.\n\nWRITING PROCESS & APPROACH:\n1. Identify Purpose: Determine target audience, tone, length, and style. If critical context is missing, briefly clarify before writing.\n2. Plan (Think): Outline key points, structural sections, and narrative transitions.\n3. Draft & Refine: Write engaging content in active voice. Ensure natural sentence variety and smooth flow.\n\nTOOL SELECTION RULES:\n- Use Think before drafting long-form or complex narrative content.\n- Use Translate tools immediately when a translation request is detected, maintaining original tone and idiomatic nuance.\n- Use Calculator when explicitly asked for reading time or exact content length metrics.\n\nRESPONSE FORMAT RULES:\n- Short Content (<500 words): Provide the completed text directly.\n- Long Content (>500 words): Provide a brief high-level outline first, followed by the complete text.\n- Formatting: Use standard Markdown headers, short paragraphs, and bullet points to maximize readability.\n- Avoid labeled closing sections like \"Summary:\" or \"In Conclusion:\".\n\nSTRICT BOUNDARIES:\n- DO NOT run complex code execution or technical debugging (Defer to: Coding Agent).\n- DO NOT perform deep live web research or fetch external URLs (Defer to: Research Agent).\n- DO NOT generate or animate media assets (Defer to: Media Agent).",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        800,
+        304
+      ],
+      "id": "76ff838e-50af-49ff-bec6-9cfff9338a36",
+      "name": "Writing Agent"
+    },
+    {
+      "parameters": {
+        "promptType": "=define",
+        "text": "=ROLE: You are the Programming Specialist for Luna. Your role is to help users with software development, debugging, algorithm design, and code optimization.\n\nINPUT FORMAT: You receive coding queries via {{ $('Chat').item.json.chatInput }}.\n\nAVAILABLE TOOLS:\n- Think: Use for algorithm design, problem decomposition, solution planning, and trade-off analysis.\n- Calculator: Computing time/space complexity, performance benchmarks, and mathematical operations.\n- GitHub Tools: Searching GitHub repositories, files, issues, or code references.\n- Coding Memory: Storing and retrieving project context, tech stack choices, framework requirements, and coding style preferences.\n\nSTRICT CODE RULE:\n- Always output 100% complete, runnable code blocks. Never use placeholders like '// implement rest here' or '// code continues...'.\n\nCAPABILITIES:\n- Code Generation & Review: Writing production-ready, clean, well-commented code across Python, JavaScript/TypeScript, Java, C++, Go, Rust, and more.\n- Debugging: Root-cause analysis, bug fixing, and defensive error handling.\n- System Design & Algorithms: Data structures, design patterns, performance optimization, and refactoring.\n\nCODE QUALITY STANDARDS:\n- Follow language-specific idiomatic conventions and naming standards.\n- Add type hints / static typing annotations where applicable.\n- Write defensive code with explicit handling for null values, boundary conditions, and edge cases.\n- Include clear inline comments explaining non-trivial logic.\n\nDEVELOPMENT & DEBUGGING APPROACH:\n1. Clarify Requirements: If language, framework, or runtime context is missing, state assumptions clearly or briefly ask.\n2. Plan (Think): Use `Think` to map out the algorithm, state management, and edge cases before writing code.\n3. Code & Explain: Deliver complete, runnable code examples—never write incomplete snippets or placeholders like `// write rest here`.\n\nRESPONSE FORMAT RULES:\nProvide output using the following clean Markdown structure:\n\n1. **Approach Summary**: Concise explanation of the solution design and why this approach was chosen.\n2. **Code Implementation**: Complete code block with appropriate language syntax highlighting and inline comments.\n3. **Usage Example**: Runnable usage snippet demonstrating inputs and expected outputs.\n4. **Complexity & Trade-offs**: Big-O time and space complexity breakdown (use standard formatting like O(N), O(1)).\n\nDEBUGGING RESPONSE FORMAT:\nWhen fixing code, follow this sequence:\n- **Root Cause**: What broke and why.\n- **Fixed Code**: Complete corrected snippet.\n- **Explanation**: Why the fix resolves the issue and how to prevent it in the future.\n\nSTRICT BOUNDARIES:\n- DO NOT generate non-technical marketing, fiction, or essay writing (Defer to: Writing Agent).\n- DO NOT perform general web search or non-technical news gathering (Defer to: Research Agent).\n- DO NOT generate or manipulate visual/audio media files (Defer to: Media Agent).",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        784,
+        800
+      ],
+      "id": "6817bb3d-32a6-4917-98a6-e7e1d68d2d95",
+      "name": "Coding Agent"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-3.1-flash-image",
+          "mode": "list",
+          "cachedResultName": "models/gemini-3.1-flash-image (Nano Banana 2)"
+        },
+        "prompt": "={{ $('Chat').item.json.chatInput }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        1952,
+        272
+      ],
+      "id": "b1f53df1-07f6-4d8d-bbb8-e91ec8af4bf7",
+      "name": "Generate Image",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "video",
+        "modelId": {
+          "__rl": true,
+          "value": "models/veo-3.0-generate-001",
+          "mode": "list"
+        },
+        "prompt": "={{ $('Chat').item.json.chatInput }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        1952,
+        432
+      ],
+      "id": "37a0794a-3f36-490a-a6b2-7ad886b4d360",
+      "name": "Generate Video",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {
+          "allowFileUploads": true,
+          "allowedFilesMimeTypes": "*",
+          "responseMode": "lastNode"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -608,
+        64
+      ],
+      "id": "1a4db2eb-d74c-4fd4-8ade-d4e855a4f6fd",
+      "name": "Chat",
+      "webhookId": "57a633a3-c34c-48c2-9a21-756effc6e4ad"
+    },
+    {
+      "parameters": {
+        "promptType": "=define",
+        "text": "=ROLE: You are Luna, a smart classifier that routes user requests to the appropriate agent or tool.\n\nGOAL: Analyze the user input provided in {{ $json.chatInput }} and classify it into EXACTLY ONE of the six categories below based on primary intent.\n\nCLASSIFICATION OPTIONS:\n\n1. topic_general\n   - Scope: General conversation, basic calculations, date/time, weather, everyday advice, or standard assistance.\n   - Tools: Think, Calculator, Weather, Date/Time.\n   - Keywords/Intent: \"Hi\", \"What is...\", \"How do I...\", \"Time\", \"Date\", \"Calculate\", \"Weather\", \"Advice\", \"Help\".\n   - Output Target: General Agent\n\n2. topic_news\n   - Scope: Requests for current news, breaking headlines, Indian or international news, tech news, or RSS news updates.\n   - Tools: Think, SerpAPI, Google News RSS, Indian News RSS (NDTV, Republic, ABP Bengali).\n   - Keywords/Intent: \"News\", \"Headlines\", \"Latest news\", \"Breaking news\", \"Tech news\", \"Today's news\", \"Top stories\", \"Sports news\".\n   - Output Target: News Agent\n\n3. topic_research\n   - Scope: Requests requiring web search, deep factual research, finding specific URLs, or analyzing documents.\n   - Tools: Think, Wikipedia, Web Search, Document access.\n   - Keywords/Intent: \"Search for...\", \"Find information about...\", \"Research...\", \"Look up...\", \"What's the latest...\".\n   - Output Target: Research Agent\n\n4. topic_writing\n   - Scope: Content creation (articles, emails, stories, essays, blogs) or language translation.\n   - Tools: Think, Translation, Language tools.\n   - Keywords/Intent: \"Write...\", \"Draft...\", \"Create story...\", \"Compose...\", \"Translate...\", \"Rewrite...\".\n   - Output Target: Writing Agent\n\n5. topic_coding\n   - Scope: Programming, code debugging, writing functions, GitHub/Repo queries, or technical development tasks.\n   - Tools: Think, Calculator, Code Execution.\n   - Keywords/Intent: \"Write code...\", \"Debug...\", \"Fix error\", \"Create function...\", \"GitHub\", \"Repo...\", \"API\".\n   - Output Target: Coding Agent\n\n6. gen_media\n   - Scope: Intent to create, generate, animate, or design visual or audio content (images, photos, videos, TTS, audio).\n   - Keywords/Intent: \"create image\", \"draw\", \"generate photo\", \"design\", \"illustrate\", \"create video\", \"animate\", \"tts\", \"generate audio\".\n   - Output Target: Media Agent\n\nCLASSIFICATION RULES:\n1. Identify the primary actionable intent.\n2. If multiple actions are implied, pick the primary tool dependency (e.g., \"Write a python script to web scrape\" -> topic_coding).\n3. If intent is broad, vague, or casual, default to \"topic_general\".\n\nOUTPUT INSTRUCTIONS:\n- Respond ONLY with the single category name (e.g., topic_general).\n- Do NOT output JSON.\n- Do NOT use curly braces {}, quotes, markdown, or commentary.\n\nEXAMPLE OUTPUT:\ntopic_general",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        -384,
+        64
+      ],
+      "id": "acab45af-10e1-41b5-85a2-866d23515b39",
+      "name": "Router"
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 10
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        -288,
+        448
+      ],
+      "id": "ed45c222-e95b-4d62-b477-55ab8b7fe817",
+      "name": "Router Memory"
+    },
+    {
+      "parameters": {
+        "text": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Text', ``, 'string') }}",
+        "translateTo": "en"
+      },
+      "type": "n8n-nodes-base.googleTranslateTool",
+      "typeVersion": 2,
+      "position": [
+        1040,
+        608
+      ],
+      "id": "2fcf2153-78b4-43ad-8893-54c1198bafd8",
+      "name": "Translate EN",
+      "credentials": {
+        "googleTranslateOAuth2Api": {
+          "id": "mVcgIUlj2bx5xHqo",
+          "name": "Translate - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "text": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Text', ``, 'string') }}",
+        "translateTo": "bn"
+      },
+      "type": "n8n-nodes-base.googleTranslateTool",
+      "typeVersion": 2,
+      "position": [
+        1168,
+        608
+      ],
+      "id": "5b77dea2-c870-4da7-a835-bbb2ee651720",
+      "name": "Translate BN",
+      "credentials": {
+        "googleTranslateOAuth2Api": {
+          "id": "mVcgIUlj2bx5xHqo",
+          "name": "Translate - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "text": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Text', ``, 'string') }}",
+        "translateTo": "hi"
+      },
+      "type": "n8n-nodes-base.googleTranslateTool",
+      "typeVersion": 2,
+      "position": [
+        1296,
+        608
+      ],
+      "id": "9c2d8762-bf9d-493a-ac98-e1afd9cd3df5",
+      "name": "Translate HI",
+      "credentials": {
+        "googleTranslateOAuth2Api": {
+          "id": "mVcgIUlj2bx5xHqo",
+          "name": "Translate - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "cityName": "Kolkata"
+      },
+      "type": "n8n-nodes-base.openWeatherMapTool",
+      "typeVersion": 1,
+      "position": [
+        272,
+        592
+      ],
+      "id": "765731de-f37c-4537-8b0b-0fc11bfe1ae4",
+      "name": "Weather",
+      "credentials": {
+        "openWeatherMapApi": {
+          "id": "B4k1ESUm4hSUYjZH",
+          "name": "Weather - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "user",
+        "owner": {
+          "__rl": true,
+          "mode": "name",
+          "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Repository_Owner', ``, 'string') }}"
+        },
+        "returnAll": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Return_All', ``, 'boolean') }}"
+      },
+      "type": "n8n-nodes-base.githubTool",
+      "typeVersion": 1.1,
+      "position": [
+        1024,
+        1104
+      ],
+      "id": "95a8b8ed-ff89-4f34-88c3-bceef0695f6d",
+      "name": "Get Repo",
+      "webhookId": "2f5a1e7f-a1e2-43ce-8066-28f921a5ced6",
+      "credentials": {
+        "githubApi": {
+          "id": "WLNrnpaKgViwX7JC",
+          "name": "GitHub - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "repository",
+        "operation": "get",
+        "owner": {
+          "__rl": true,
+          "mode": "name",
+          "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Repository_Owner', ``, 'string') }}"
+        },
+        "repository": {
+          "__rl": true,
+          "mode": "name",
+          "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Repository_Name', ``, 'string') }}"
+        }
+      },
+      "type": "n8n-nodes-base.githubTool",
+      "typeVersion": 1.1,
+      "position": [
+        1136,
+        1104
+      ],
+      "id": "05e6d939-7cac-49d5-9a1e-ea03218c59b3",
+      "name": "Get Data",
+      "webhookId": "9335a463-2b21-40a8-946f-ec6d192e38a0",
+      "credentials": {
+        "githubApi": {
+          "id": "WLNrnpaKgViwX7JC",
+          "name": "GitHub - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 20
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        1568,
+        624
+      ],
+      "id": "21ea19a6-632c-45a1-b5e7-bde68d7ac4d3",
+      "name": "Media Memory"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        1664,
+        480
+      ],
+      "id": "1618d85a-96a1-41d3-bae2-f0788a3044e9",
+      "name": "Think - M"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "gen_image",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "9e856a00-db12-4c05-a22e-170258cb2208"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Image"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "6b41ca7b-ac40-463d-bf90-92e3e4d18a0a",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "gen_video",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Video"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "40d05f2f-fa43-460e-9f30-529c2fa1df74",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "gen_tts",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "TTS"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        1760,
+        288
+      ],
+      "id": "8e8a56d1-2ffa-444f-9306-8628047ba213",
+      "name": "Media Switch"
+    },
+    {
+      "parameters": {
+        "promptType": "=define",
+        "text": "=ROLE: You are the Media Generating Specialist and smart media type classifier for Luna.\n\nINPUT FORMAT: You receive media requests via {{ $('Chat').item.json.chatInput }}.\n\nGOAL: Analyze the user input and classify it into EXACTLY ONE of the three media sub-categories based on the primary output requested.\n\nCLASSIFICATION OPTIONS:\n\n1. gen_image\n   - Scope: Visual art, illustrations, photography, graphical design, or static image generation.\n   - Keywords/Intent: \"create image\", \"draw\", \"picture of\", \"generate photo\", \"design\", \"illustrate\", \"visualize\", \"render\".\n   - Target Tool: Image Generation Tool\n\n2. gen_video\n   - Scope: Moving visual content, animations, clips, or motion graphics.\n   - Keywords/Intent: \"create video\", \"animate\", \"video of\", \"moving picture\", \"generate animation\", \"make clip\".\n   - Target Tool: Video Generation Tool\n\n3. gen_tts\n   - Scope: Spoken audio, text-to-speech conversions, sound generation, or voiceovers.\n   - Keywords/Intent: \"create audio\", \"tts\", \"speak this\", \"audio of\", \"generate audio\", \"voiceover\", \"read aloud\".\n   - Target Tool: Text-to-Speech / Audio Generation Tool\n\nCLASSIFICATION RULES:\n1. Identify primary media action keywords and user intent.\n2. If ambiguous between image and video, prefer `gen_image` unless motion or animation is explicitly mentioned.\n\nOUTPUT INSTRUCTIONS:\n- Respond ONLY with the single category name (gen_image, gen_video, or gen_tts).\n- Do NOT output JSON.\n- Do NOT use curly braces {}, quotes, markdown, or commentary.\n\nEXAMPLE OUTPUT:\ngen_image",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        1472,
+        304
+      ],
+      "id": "49864967-d44f-4411-8380-4cc33dd97a9f",
+      "name": "Media Agent"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Get the chat input\nconst chatInput = $('Chat').first().json.chatInput;\n\n// Extract text between quotes using regex\nconst match = chatInput.match(/\"([^\"]*)\"/);\n\n// Get the extracted text or use original if no quotes found\nconst extractedText = match ? match[1] : chatInput;\n\nreturn {\n  json: {\n    text: extractedText,\n    originalInput: chatInput\n  }\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1952,
+        592
+      ],
+      "id": "b79c97d5-3393-4f26-a692-884981f1182d",
+      "name": "Extract Quotes"
+    },
+    {
+      "parameters": {
+        "url": "=http://api.voicerss.org/?key=e528553d13c6496c8938abcc1a87cdf1&hl=en-us&v=Mary&src={{ $json.text }}&c=MP3&f=44khz_16bit_stereo",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2112,
+        592
+      ],
+      "id": "0d3e14b9-a50a-4381-8cb2-0cd753020a6a",
+      "name": "VoiceRSS TTS"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-3.1-flash-lite",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -384,
+        256
+      ],
+      "id": "5d085800-55c3-4961-b0ba-2a5f9853568c",
+      "name": "Gemini",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-3.1-flash-lite",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        32,
+        480
+      ],
+      "id": "eed45483-16b9-4839-80de-f4db3ecad8f8",
+      "name": "General",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-3.1-flash-lite",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        800,
+        496
+      ],
+      "id": "bf43c9be-f8d6-4186-8466-02b0e87be719",
+      "name": "Writing",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-3.1-flash-lite",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        1472,
+        496
+      ],
+      "id": "20bcbb3b-13d3-4eab-bb38-39ccdfb7702e",
+      "name": "Media",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-3.1-flash-lite",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        16,
+        1008
+      ],
+      "id": "8dd83436-f691-490f-9688-db95326e4cee",
+      "name": "Research",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-3.1-flash-lite",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        784,
+        992
+      ],
+      "id": "d8cadebf-5ee7-488c-ab82-c416fa09ecca",
+      "name": "Coding",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "=define",
+        "text": "=ROLE: You are the News & Current Events Specialist for Luna. Your role is to fetch, synthesize, and present real-time news headlines, breaking stories, regional updates, and topic-specific news across verified RSS feeds and search APIs.\n\nINPUT FORMAT: You receive user queries via {{ $('Chat').item.json.chatInput }}.\n\nAVAILABLE TOOLS:\n- Think - N: Internal reasoning for topic synthesis, news filtering, and multi-feed summaries.\n- Date & Time - N: Fetches current system time to contextualize relative queries (e.g., \"today\", \"yesterday\").\n- SerpAPI - N: Real-time web search for live breaking updates, specific niche events, or missing topic feeds.\n\nRSS FEED TOOLS\n- Republic World Feeds: R. Ex, R. India, R. World, R. Fact, R. Science, R. Space, R. Tech, R. Sports, R. Game\n- NDTV Feeds: NDTV Late, NDTV Trend, NDTV Top, NDTV India, NDTV World, NDTV Tech, NDTV Sports\n- ABP Live Feeds: ABP Home, ABP Trend, ABP Fact, ABP India, ABP World, ABP Tech, ABP Sports, ABP Game\n\nTOOL EXECUTION RULES:\n1. SMART ROUTING: Select relevant feeds based on the user's query topic (e.g., query about space → run R. Space, R. Science, SerpAPI - N).\n2. MULTI-FEED COVERAGE: For broad news queries (e.g., \"Latest India news\"), query matching feeds across multiple providers (e.g., NDTV India, ABP India, R. India) simultaneously to ensure multi-angle coverage.\n3. TIME CONTEXT: Call `Date & Time - N` when user queries depend on specific dates or relative timeframes.\n4. SEARCH BACKUP: Trigger `SerpAPI - N` if RSS feeds do not return sufficient details for specific breaking events or niche topics.\n\nCAPABILITIES:\n- Synthesize concurrent streams from national, international, tech, space, gaming, and sports RSS feeds.\n- Deduplicate overlapping stories, cross-reference sources, and build cohesive thematic summaries.\n- Clearly attribute every headline to its originating publication and specific feed.\n\nAPPROACH & BEHAVIOR:\n1. Multi-Feed Integration: Group information gathered across tools into clear, structured thematic categories.\n2. Neutral & Objective: Present facts directly without political bias, commentary, or sensationalism.\n3. Accurate Attribution: Explicitly tag the originating news source (e.g., NDTV, Republic World, ABP Live, or SerpAPI Web Search).\n\nRESPONSE FORMAT:\nDeliver updates using the following structured Markdown layout:\n\n## [Category / Topic] News Headlines\n\n* **[Headline Title 1]** - *[Source Name]*\n  Brief 1-2 sentence summary of key details.\n\n* **[Headline Title 2]** - *[Source Name]*\n  Brief 1-2 sentence summary of key details.\n\nSTRICT BOUNDARIES:\n- DO NOT provide general conversational advice or weather (Defer to: General Agent).\n- DO NOT perform code debugging or programming assistance (Defer to: Coding Agent).\n- DO NOT draft creative stories, essays, or editorials (Defer to: Writing Agent).\n- DO NOT generate, edit, or animate media files (Defer to: Media Agent).\n\nFORMATTING REQUIREMENTS:\n- Use clean Markdown bulleted lists with bold titles.\n- Keep summaries concise and scannable.\n- Do not append concluding summaries or sections labeled \"In Conclusion\" or \"Summary\".",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        1472,
+        800
+      ],
+      "id": "654199de-8169-4147-a4cf-7c6b538de50a",
+      "name": "News Agent"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-3.1-flash-lite",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        1472,
+        992
+      ],
+      "id": "4efab089-277a-48a7-ad8c-41e5dd6140e4",
+      "name": "News",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "dXyNBIXcPjgRLiHw",
+          "name": "Gemini - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        1712,
+        976
+      ],
+      "id": "95eb4e71-365c-491c-895f-cbe59f3329e5",
+      "name": "Think - N"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolSerpApi",
+      "typeVersion": 1,
+      "position": [
+        576,
+        992
+      ],
+      "id": "4347066d-5dd8-43d5-826e-c38e1f7e76ee",
+      "name": "SerpAPI - R",
+      "credentials": {
+        "serpApi": {
+          "id": "U5gN2y0RH6Ub2W9a",
+          "name": "SerpAPI - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolSerpApi",
+      "typeVersion": 1,
+      "position": [
+        1936,
+        976
+      ],
+      "id": "ec6646fe-e7d7-4386-ae9a-8ae54538881e",
+      "name": "SerpAPI - N",
+      "credentials": {
+        "serpApi": {
+          "id": "U5gN2y0RH6Ub2W9a",
+          "name": "SerpAPI - Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from Republic World Exclusive RSS Feed",
+        "url": "https://www.republicworld.com/rss/shows/this-is-exclusive.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        1712,
+        1104
+      ],
+      "id": "8ef757f5-df22-4993-b3d1-3b505f5f156a",
+      "name": "R. Ex"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from Republic World India RSS Feed",
+        "url": "https://www.republicworld.com/rss/india.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2160,
+        1104
+      ],
+      "id": "95595730-79a5-449f-b4c8-1c33885c7b5d",
+      "name": "R. India"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from Republic World World RSS Feed",
+        "url": "https://www.republicworld.com/rss/world-news.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2272,
+        1104
+      ],
+      "id": "fccc429d-306e-44b0-a323-5aec8384ffad",
+      "name": "R. World"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from Republic World Fact-Check RSS Feed",
+        "url": "https://www.republicworld.com/rss/fact-check.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2048,
+        1104
+      ],
+      "id": "47e62d3f-21a1-443b-9904-9c36c195b7b3",
+      "name": "R. Fact"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from Republic World Science RSS Feed",
+        "url": "https://www.republicworld.com/rss/science.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2384,
+        1104
+      ],
+      "id": "149a1c62-2513-406b-9875-8705b7a59476",
+      "name": "R. Science"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from Republic World Tech RSS Feed",
+        "url": "https://www.republicworld.com/rss/tech.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2496,
+        1104
+      ],
+      "id": "0b8b5d79-f091-4fb0-978f-16207c74fa2f",
+      "name": "R. Tech"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from Republic World Sports RSS Feed",
+        "url": "https://www.republicworld.com/rss/sports.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2720,
+        1104
+      ],
+      "id": "f93af6a1-92bf-444c-9920-6d5514252bf0",
+      "name": "R. Sports"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from NDTV Sports RSS Feed",
+        "url": "https://feeds.feedburner.com/ndtvsports-latest",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2720,
+        1232
+      ],
+      "id": "d0a28082-9000-44fb-898e-12828674ee82",
+      "name": "NDTV Sports"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from NDTV Tech RSS Feed",
+        "url": "https://feeds.feedburner.com/gadgets360-latest",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2496,
+        1232
+      ],
+      "id": "d921a54f-6b67-4d0e-9841-31898e3e9bf3",
+      "name": "NDTV Tech"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from NDTV World RSS Feed",
+        "url": "https://feeds.feedburner.com/ndtvnews-world-news",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2272,
+        1232
+      ],
+      "id": "85e83c3b-a3b9-44ac-9938-8e33f954d37b",
+      "name": "NDTV World"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from NDTV India RSS Feed",
+        "url": "https://feeds.feedburner.com/ndtvnews-india-news",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2160,
+        1232
+      ],
+      "id": "afde7ea3-3c13-44ba-a6e6-924eb846f79d",
+      "name": "NDTV India"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from NDTV Latest RSS Feed",
+        "url": "https://feeds.feedburner.com/ndtvnews-latest",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        1712,
+        1232
+      ],
+      "id": "e4d4c90c-7d78-4531-901f-c1c598b13190",
+      "name": "NDTV Late"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from NDTV Trending Stories RSS Feed",
+        "url": "https://feeds.feedburner.com/ndtvnews-trending-news",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        1824,
+        1232
+      ],
+      "id": "3c6ba08f-b0e0-4253-b633-4f166ea90aab",
+      "name": "NDTV Trend"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from NDTV Top Stories RSS Feed",
+        "url": "https://feeds.feedburner.com/ndtvnews-top-stories",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        1936,
+        1232
+      ],
+      "id": "e62f6bd4-76da-4012-b84e-3fd5d2a37e98",
+      "name": "NDTV Top"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from ABP Home RSS Feed",
+        "url": "https://www.abplive.com/home/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        1712,
+        1360
+      ],
+      "id": "e49f512e-7dc2-46ba-b205-637b54354d17",
+      "name": "ABP Home"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from ABP Trending RSS Feed",
+        "url": "https://www.abplive.com/trending/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        1824,
+        1360
+      ],
+      "id": "b467930a-c962-4b6e-ba5f-08b10915097f",
+      "name": "ABP Trend"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from ABP Fact-Check RSS Feed",
+        "url": "https://www.abplive.com/fact-check/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2048,
+        1360
+      ],
+      "id": "3730503d-ef97-4fd2-b7bd-7a89b0d6e001",
+      "name": "ABP Fact"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from ABP India RSS Feed",
+        "url": "https://www.abplive.com/news/india/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2160,
+        1360
+      ],
+      "id": "e4ab6750-8ee8-4bd9-aeea-a2c1aebf4d2e",
+      "name": "ABP India"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from ABP World RSS Feed",
+        "url": "https://www.abplive.com/news/world/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2272,
+        1360
+      ],
+      "id": "f82a545a-8df9-46c3-871f-5d7b1ca0873c",
+      "name": "ABP World"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from ABP Gaming RSS Feed",
+        "url": "https://news.abplive.com/gaming/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2832,
+        1360
+      ],
+      "id": "73403f5a-54f4-4095-860a-71bd9e86f417",
+      "name": "ABP Game"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from ABP Tech RSS Feed",
+        "url": "https://www.abplive.com/technology/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2496,
+        1360
+      ],
+      "id": "0f612692-abdd-4c7f-ae52-f4a4763e9766",
+      "name": "ABP Tech"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from ABP Sports RSS Feed",
+        "url": "https://www.abplive.com/sports/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2720,
+        1360
+      ],
+      "id": "56bc27fc-c043-48a6-b2ab-78774c44dc29",
+      "name": "ABP Sports"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from Republic World Gaming RSS Feed",
+        "url": "https://www.republicworld.com/rss/tech/gaming.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2832,
+        1104
+      ],
+      "id": "c6332335-ae39-4aef-8fe3-bb2babcb7b2d",
+      "name": "R. Game"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Reads data from Republic World Space RSS Feed",
+        "url": "https://www.republicworld.com/rss/science/space.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "typeVersion": 1.2,
+      "position": [
+        2608,
+        1104
+      ],
+      "id": "8f4ffb4f-3c0d-4917-8c3b-42048e8b5365",
+      "name": "R. Space"
+    },
+    {
+      "parameters": {
+        "includeTime": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Include_Current_Time', ``, 'boolean') }}",
+        "outputFieldName": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Output_Field_Name', ``, 'string') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dateTimeTool",
+      "typeVersion": 2,
+      "position": [
+        496,
+        464
+      ],
+      "id": "aec5964e-55d9-49e5-8c6c-893eaf25a897",
+      "name": "Date & Time - G"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dateTimeTool",
+      "typeVersion": 2,
+      "position": [
+        1824,
+        976
+      ],
+      "id": "9d35b6f9-226d-4518-ad44-f8e2c0bc0c1d",
+      "name": "Date & Time - N"
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 20
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        1568,
+        1120
+      ],
+      "id": "2157f5b8-2ec2-4939-811a-fe397f64e192",
+      "name": "News Memory"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Image": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Audio": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Video": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Document": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculator - R": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think - R": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think - G": {
+      "ai_tool": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculator - C": {
+      "ai_tool": [
+        [
+          {
+            "node": "Coding Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think - C": {
+      "ai_tool": [
+        [
+          {
+            "node": "Coding Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculator -  W": {
+      "ai_tool": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think - W": {
+      "ai_tool": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculator - G": {
+      "ai_tool": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wikipedia": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transcribe Audio": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YT Video": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YT Playlist": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YT Channel": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Research Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Coding Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Coding Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "General Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Writing Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "General Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Research Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Writing Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Coding Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Media Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "News Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think": {
+      "ai_tool": [
+        [
+          {
+            "node": "Router",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Chat": {
+      "main": [
+        [
+          {
+            "node": "Router",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Router": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Router Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Router",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Translate EN": {
+      "ai_tool": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Translate BN": {
+      "ai_tool": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Translate HI": {
+      "ai_tool": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Weather": {
+      "ai_tool": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Repo": {
+      "ai_tool": [
+        [
+          {
+            "node": "Coding Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Data": {
+      "ai_tool": [
+        [
+          {
+            "node": "Coding Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Media Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Media Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think - M": {
+      "ai_tool": [
+        [
+          {
+            "node": "Media Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Media Switch": {
+      "main": [
+        [
+          {
+            "node": "Generate Image",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Generate Video",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract Quotes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Media Agent": {
+      "main": [
+        [
+          {
+            "node": "Media Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Quotes": {
+      "main": [
+        [
+          {
+            "node": "VoiceRSS TTS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gemini": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Router",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "General": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Writing": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Writing Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Media": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Media Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "VoiceRSS TTS": {
+      "main": [
+        []
+      ]
+    },
+    "Research": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Coding": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Coding Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "News": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think - N": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "SerpAPI - R": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "SerpAPI - N": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "R. Ex": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Date & Time - G": {
+      "ai_tool": [
+        [
+          {
+            "node": "General Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Date & Time - N": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "R. Fact": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "R. India": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "R. World": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "R. Science": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "R. Tech": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "R. Space": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "R. Sports": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "R. Game": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NDTV Late": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NDTV Trend": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NDTV Top": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NDTV India": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NDTV World": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NDTV Tech": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NDTV Sports": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ABP Home": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ABP Trend": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ABP Fact": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ABP India": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ABP World": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ABP Tech": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ABP Sports": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ABP Game": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "News Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "e1b122de-1271-4a05-a0e7-57f8cfbefa7a",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "6dc181b4455935aacf167a3c4386ec91af04388d35013f2006729c412d95e35d"
+  },
+  "nodeGroups": [],
+  "id": "aXbiEhAdkwh5CdxY",
+  "tags": [
+    {
+      "updatedAt": "2026-07-27T04:15:05.756Z",
+      "createdAt": "2026-07-27T04:15:05.756Z",
+      "id": "5Au0G4XE89D7ajjM",
+      "name": "@saptarshiroy39"
+    }
+  ]
+}
