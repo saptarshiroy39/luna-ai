@@ -24,7 +24,7 @@
 | FEATUREs | DESCRIPTION | TECHNOLOGY |
 | :---: | :---: | :---: |
 | **Intelligent Agent Routing** | Smart query classification and routing to 6 specialized AI agents | **_Gemini 3.1 Flash Lite_** |
-| **Advanced Research** | Real-time web search, Wikipedia access, and multi-source analysis | **_SerpAPI_**, **_Wikipedia Tool_** |
+| **Advanced Research** | Real-time web search, Wikipedia access, and multi-source analysis | **_Tavily_**, **_Wikipedia Tool_** |
 | **YouTube Integration** | Analyze videos, playlists, and channels with detailed metadata extraction | **_YouTube API_** |
 | **Code Development** | Multi-language programming assistance, debugging, and GitHub integration | **_GitHub API_**, **_Gemini 3.1 Flash Lite_** |
 | **Content Creation** | Blog posts, articles, creative writing, and professional communications | **_Gemini 3.1 Flash Lite_** |
@@ -33,7 +33,7 @@
 | **Text-to-Speech** | Natural voice synthesis for any text content | **_VoiceRSS API_** |
 | **Multi-Modal Analysis** | Process and analyze images, audio, video, and documents | **_Gemini Tools_** |
 | **Weather Updates** | Real-time weather information and forecasts | **_OpenWeatherMap API_** |
-| **News Aggregation** | Curated news headlines from multiple sources | **_RSS Feeds (Republic, NDTV, ABP)_**, **_SerpAPI_** |
+| **News Aggregation** | Curated news headlines from multiple sources | **_RSS Feeds (Republic, NDTV, ABP)_**, **_Tavily_** |
 | **Contextual Memory** | 20-message conversation buffers maintain context across interactions | **_Built-in_** |
 | **Smart Tools** | Built-in calculator, date/time queries, and step-by-step reasoning capabilities | **_Built-in_** |
 

@@ -1,5 +1,5 @@
 {
-  "name": "Luna AI",
+  "name": "Luna-AI",
   "nodes": [
     {
       "parameters": {
@@ -16,15 +16,15 @@
       "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
       "typeVersion": 1,
       "position": [
-        240,
+        848,
         1120
       ],
-      "id": "e4a53b1c-a527-4ceb-8587-445fa1df161e",
+      "id": "b825de41-2bf0-400c-8d38-6b575b8bc610",
       "name": "Image",
       "credentials": {
         "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
+          "id": "y9lXuptApAW5W61N",
+          "name": "Luna-AI"
         }
       }
     },
@@ -43,42 +43,15 @@
       "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
       "typeVersion": 1,
       "position": [
-        352,
+        960,
         1120
       ],
-      "id": "90e54ccf-c716-481c-820b-84759f6827ed",
+      "id": "7c658e0f-a790-45cb-b638-0cd7da18c53c",
       "name": "Audio",
       "credentials": {
         "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "resource": "video",
-        "operation": "analyze",
-        "modelId": {
-          "__rl": true,
-          "value": "models/gemini-3.1-flash-lite",
-          "mode": "list",
-          "cachedResultName": "models/gemini-3.1-flash-lite"
-        },
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
-      "typeVersion": 1,
-      "position": [
-        464,
-        1120
-      ],
-      "id": "598fd37f-4cf4-49c3-a82d-628adefc9847",
-      "name": "Video",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
+          "id": "y9lXuptApAW5W61N",
+          "name": "Luna-AI"
         }
       }
     },
@@ -96,15 +69,15 @@
       "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
       "typeVersion": 1,
       "position": [
-        576,
+        1184,
         1120
       ],
-      "id": "25734be9-c1bf-472e-9ec1-8f541f3f90c1",
+      "id": "d018802c-6372-4c94-a473-fe29f6237f5a",
       "name": "Document",
       "credentials": {
         "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
+          "id": "y9lXuptApAW5W61N",
+          "name": "Luna-AI"
         }
       }
     },
@@ -113,10 +86,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolCalculator",
       "typeVersion": 1,
       "position": [
-        352,
+        960,
         992
       ],
-      "id": "b4f4437d-76c5-4985-a2c7-af84dc8842f0",
+      "id": "af558683-8679-4e70-9271-d8e50a29ac5c",
       "name": "Calculator - R"
     },
     {
@@ -124,10 +97,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolThink",
       "typeVersion": 1.1,
       "position": [
-        240,
+        848,
         992
       ],
-      "id": "e09ac8ff-e987-40ab-b320-0ed7e1d1f843",
+      "id": "6bbf2083-28dc-4d32-b3c5-9c81cc43e2e2",
       "name": "Think - R"
     },
     {
@@ -135,10 +108,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolThink",
       "typeVersion": 1.1,
       "position": [
-        272,
+        880,
         464
       ],
-      "id": "d0215b39-b075-410d-86cb-999cc3c79454",
+      "id": "4fed97c4-8d68-4de1-8773-d2d902e3dbca",
       "name": "Think - G"
     },
     {
@@ -146,10 +119,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolCalculator",
       "typeVersion": 1,
       "position": [
-        1136,
+        1744,
         976
       ],
-      "id": "581bf940-6365-4a2f-b741-7bab54da215b",
+      "id": "aeeaaa7c-bb2d-4cad-aa4f-d63b3482934b",
       "name": "Calculator - C"
     },
     {
@@ -157,10 +130,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolThink",
       "typeVersion": 1.1,
       "position": [
-        1024,
+        1632,
         976
       ],
-      "id": "8029af0d-6c04-4d4e-8619-112dc5877f4c",
+      "id": "eebf4a8f-3bcf-45bd-93b4-0b724521fdd4",
       "name": "Think - C"
     },
     {
@@ -168,10 +141,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolCalculator",
       "typeVersion": 1,
       "position": [
-        1168,
+        1776,
         480
       ],
-      "id": "c01c247d-1849-40d9-a4ad-2bfcab4e5913",
+      "id": "8ea8d301-38b8-4b55-8b6c-a7cc6d1b3e99",
       "name": "Calculator -  W"
     },
     {
@@ -179,10 +152,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolThink",
       "typeVersion": 1.1,
       "position": [
-        1040,
+        1648,
         480
       ],
-      "id": "9aaa5c2f-f0a1-4692-9b28-738f3bd729f0",
+      "id": "018eb08d-2d3b-4265-8906-0b1b9fb0d971",
       "name": "Think - W"
     },
     {
@@ -190,10 +163,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolCalculator",
       "typeVersion": 1,
       "position": [
-        384,
+        992,
         464
       ],
-      "id": "98c9388a-0719-491f-90df-3d6e7de7f18c",
+      "id": "3870d2b3-9eb4-4d2d-bb3f-919ef004cd08",
       "name": "Calculator - G"
     },
     {
@@ -201,10 +174,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolWikipedia",
       "typeVersion": 1,
       "position": [
-        464,
+        1072,
         992
       ],
-      "id": "c7aaa4d4-924c-4b87-93f2-9e030efc5bb1",
+      "id": "30907acb-81f8-4d16-8ebb-86e7bcf94fcb",
       "name": "Wikipedia"
     },
     {
@@ -221,15 +194,15 @@
       "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
       "typeVersion": 1,
       "position": [
-        240,
-        1264
+        1296,
+        1120
       ],
-      "id": "83485d3a-6a0b-47b3-ae15-0d791d7fd34d",
+      "id": "48e153d1-fb13-4251-846e-34ac90d9e2cb",
       "name": "Transcribe Audio",
       "credentials": {
         "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
+          "id": "y9lXuptApAW5W61N",
+          "name": "Luna-AI"
         }
       }
     },
@@ -243,15 +216,15 @@
       "type": "n8n-nodes-base.youTubeTool",
       "typeVersion": 1,
       "position": [
-        352,
+        848,
         1264
       ],
-      "id": "b36a1117-6b1a-4ff1-8424-cb29bea17dfd",
+      "id": "ff269d21-35ec-40ac-99e8-334299c6fd02",
       "name": "YT Video",
       "credentials": {
         "youTubeOAuth2Api": {
-          "id": "oiJaHzN18UqhTFmH",
-          "name": "YT - Luna AI"
+          "id": "9H6KIiLc8dpSgokN",
+          "name": "Luna-AI"
         }
       }
     },
@@ -265,15 +238,15 @@
       "type": "n8n-nodes-base.youTubeTool",
       "typeVersion": 1,
       "position": [
-        464,
+        960,
         1264
       ],
-      "id": "748d77e9-bcef-46a0-a46c-72c959db5705",
+      "id": "00e821c2-844a-4ad2-91ad-9c14302947b3",
       "name": "YT Playlist",
       "credentials": {
         "youTubeOAuth2Api": {
-          "id": "oiJaHzN18UqhTFmH",
-          "name": "YT - Luna AI"
+          "id": "9H6KIiLc8dpSgokN",
+          "name": "Luna-AI"
         }
       }
     },
@@ -285,15 +258,15 @@
       "type": "n8n-nodes-base.youTubeTool",
       "typeVersion": 1,
       "position": [
-        576,
+        1072,
         1264
       ],
-      "id": "b788f2a6-66eb-4418-9c7d-56592e6e0b52",
+      "id": "99fa2616-59cf-464d-9b31-fe54b1abfebd",
       "name": "YT Channel",
       "credentials": {
         "youTubeOAuth2Api": {
-          "id": "oiJaHzN18UqhTFmH",
-          "name": "YT - Luna AI"
+          "id": "9H6KIiLc8dpSgokN",
+          "name": "Luna-AI"
         }
       }
     },
@@ -304,10 +277,10 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        112,
+        720,
         1136
       ],
-      "id": "d528ae09-3cb6-46eb-b948-1379d2beac06",
+      "id": "0961f88a-43d7-4529-b4b5-cabeb8e3321c",
       "name": "Research Memory"
     },
     {
@@ -317,10 +290,10 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        880,
+        1488,
         1120
       ],
-      "id": "48b1409c-569e-4420-9725-1f9b5e8096df",
+      "id": "d05503bb-73fc-402d-a7d8-8a46d47a259b",
       "name": "Coding Memory"
     },
     {
@@ -330,10 +303,10 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        128,
+        736,
         608
       ],
-      "id": "e694b4a5-dafc-42e8-9fa6-894465878690",
+      "id": "ce03cd95-a7e7-4a8e-a151-44546f993530",
       "name": "General Memory"
     },
     {
@@ -343,10 +316,10 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        896,
+        1504,
         624
       ],
-      "id": "6ac09f8b-b06a-4712-a6eb-3be657fd6f1d",
+      "id": "bd277630-0e18-4988-a972-dcecfa751824",
       "name": "Writing Memory"
     },
     {
@@ -509,10 +482,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.3,
       "position": [
-        0,
+        608,
         0
       ],
-      "id": "914a2a5d-602e-4c27-9587-aacc6a2cb4c6",
+      "id": "fadcabb9-d874-48f3-b182-8e816a59e218",
       "name": "Switch"
     },
     {
@@ -520,10 +493,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolThink",
       "typeVersion": 1.1,
       "position": [
-        -192,
+        416,
         288
       ],
-      "id": "d330f14a-8711-4953-a0cd-5088b785cb00",
+      "id": "dc9b5a18-9b46-4da1-bfd5-c9a05105893e",
       "name": "Think"
     },
     {
@@ -535,25 +508,25 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
       "position": [
-        32,
+        640,
         304
       ],
-      "id": "eeb5b0c8-b068-485b-8345-ac17dad40d85",
+      "id": "87863d5d-9769-4704-8bae-2ad905339107",
       "name": "General Agent"
     },
     {
       "parameters": {
         "promptType": "=define",
-        "text": "=ROLE: You are the Research Specialist for Luna. Your role is to gather, analyze, and synthesize information from web searches, encyclopedic bases, media files, and YouTube resources into structured, accurate answers.\n\nINPUT FORMAT: You receive research queries via {{ $('Chat').item.json.chatInput }}.\n\nAVAILABLE TOOLS:\n- Think: Multi-step reasoning, evidence synthesis, and complex decision analysis.\n- SerpAPI: Web search for real-time news, current events, live stats, and trending information.\n- Wikipedia: Historical facts, scientific concepts, biographies, and general encyclopedic entries.\n- Calculator: Numerical calculations, data processing, and statistical analysis.\n- Image Analysis / Audio Analysis / Video Analysis / Document Analysis: Extracting insights from provided files (images, audio, video, PDFs, text files).\n- Transcribe Audio: Speech-to-text processing for audio content.\n- YT Video: Extracting metadata, transcripts, and context from YouTube video links (`youtube.com/watch?v=` or `youtu.be/`).\n- YT Playlist: Processing YouTube playlist links (`youtube.com/playlist?list=`).\n- YT Channel: Extracting channel statistics, video catalog data, and channel details.\n- Research Memory: Storing and retrieving context from prior queries within the session.\n\nURL DETECT RULES:\n- Detect YouTube URLs -> Execute YT Video / YT Playlist tool directly.\n- Detect live queries / real-time topics -> Execute SerpAPI immediately.\n\nRESEARCH & SYNTHESIS APPROACH:\n1. Identify Knowledge Scope: Determine whether real-time web search, encyclopedic data, YouTube extractions, or document analysis is required.\n2. Multi-Source Verification: When dealing with ambiguous or conflicting topics, cross-check findings across multiple sources and highlight key perspectives.\n3. Logical Planning (Think): Use `Think` for complex queries that require step-by-step reasoning or combining data from multiple tools.\n\nTOOL TRIGGER RULES:\n- Use SerpAPI for real-time, time-sensitive, or breaking information.\n- Use Wikipedia for background, foundational concepts, or history.\n- Use YT Video / Playlist / Channel tools immediately when a YouTube URL or channel query is detected.\n- Use Calculator whenever precise numeric or data manipulation is needed.\n\nCITATION & ATTRIBUTION REQUIREMENTS:\n- Always cite source types clearly in text (e.g., \"According to recent search results...\", \"Wikipedia details that...\", \"In the video '[Title]' by [Creator]...\").\n- Acknowledge source gaps or uncertainty explicitly if evidence is conflicting or unavailable.\n\nYOUTUBE ANALYSIS STRUCTURE:\nWhen reporting on YouTube content, structure the response cleanly:\n- Title: [Content Name]\n- Creator: [Channel Name]\n- Details: [Upload Date, Duration, View Count if relevant]\n- Summary: [Concise synthesis of key topics/transcript]\n- Highlights: [Bullet points of main takeaways]\n\nSTRICT BOUNDARIES:\n- DO NOT execute code or debug software (Defer to: Coding Agent).\n- DO NOT generate creative fiction, poetry, or marketing drafts (Defer to: Writing Agent).\n- DO NOT generate visual or audio media files (Defer to: Media Agent).\n\nFORMATTING REQUIREMENTS:\n- Use Markdown headers (`##`), bolding, and bulleted lists for scannability.\n- Keep direct answers at the top of the response before detailing supporting evidence.\n- Avoid redundant concluding wrap-ups (e.g., \"In summary\" or \"To conclude\").",
+        "text": "=ROLE: You are the Research Specialist for Luna. Your role is to gather, analyze, and synthesize information from web searches, encyclopedic bases, media files, and YouTube resources into structured, accurate answers.\n\nINPUT FORMAT: You receive research queries via {{ $('Chat').item.json.chatInput }}.\n\nAVAILABLE TOOLS:\n- Think: Multi-step reasoning, evidence synthesis, and complex decision analysis.\n- Tavily: Web search for real-time information, current events, live stats, and parsed web content.\n- Wikipedia: Historical facts, scientific concepts, biographies, and general encyclopedic entries.\n- Calculator: Numerical calculations, data processing, and statistical analysis.\n- Image Analysis / Audio Analysis / Video Analysis / Document Analysis: Extracting insights from provided files (images, audio, video, PDFs, text files).\n- Transcribe Audio: Speech-to-text processing for audio content.\n- YT Video: Extracting metadata, transcripts, and context from YouTube video links (`youtube.com/watch?v=` or `youtu.be/`).\n- YT Playlist: Processing YouTube playlist links (`youtube.com/playlist?list=`).\n- YT Channel: Extracting channel statistics, video catalog data, and channel details.\n- Research Memory: Storing and retrieving context from prior queries within the session.\n\nURL DETECT RULES:\n- Detect YouTube URLs -> Execute YT Video / YT Playlist tool directly.\n- Detect live queries / real-time topics -> Execute Tavily immediately.\n\nRESEARCH & SYNTHESIS APPROACH:\n1. Identify Knowledge Scope: Determine whether real-time web search, encyclopedic data, YouTube extractions, or document analysis is required.\n2. Multi-Source Verification: When dealing with ambiguous or conflicting topics, cross-check findings across multiple sources and highlight key perspectives.\n3. Logical Planning (Think): Use `Think` for complex queries that require step-by-step reasoning or combining data from multiple tools.\n\nTOOL TRIGGER RULES:\n- Use Tavily for real-time, time-sensitive, or breaking information.\n- Use Wikipedia for background, foundational concepts, or history.\n- Use YT Video / Playlist / Channel tools immediately when a YouTube URL or channel query is detected.\n- Use Calculator whenever precise numeric or data manipulation is needed.\n\nCITATION & ATTRIBUTION REQUIREMENTS:\n- Always cite source types clearly in text (e.g., \"According to recent search results...\", \"Wikipedia details that...\", \"In the video '[Title]' by [Creator]...\").\n- Acknowledge source gaps or uncertainty explicitly if evidence is conflicting or unavailable.\n\nYOUTUBE ANALYSIS STRUCTURE:\nWhen reporting on YouTube content, structure the response cleanly:\n- Title: [Content Name]\n- Creator: [Channel Name]\n- Details: [Upload Date, Duration, View Count if relevant]\n- Summary: [Concise synthesis of key topics/transcript]\n- Highlights: [Bullet points of main takeaways]\n\nSTRICT BOUNDARIES:\n- DO NOT execute code or debug software (Defer to: Coding Agent).\n- DO NOT generate creative fiction, poetry, or marketing drafts (Defer to: Writing Agent).\n- DO NOT generate visual or audio media files (Defer to: Media Agent).\n\nFORMATTING REQUIREMENTS:\n- Use Markdown headers (`##`), bolding, and bulleted lists for scannability.\n- Keep direct answers at the top of the response before detailing supporting evidence.\n- Avoid redundant concluding wrap-ups (e.g., \"In summary\" or \"To conclude\").",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
       "position": [
-        16,
+        624,
         800
       ],
-      "id": "b7591a1e-350d-4704-9126-18672eec9c69",
+      "id": "3e150dbf-b4b5-4a76-aee8-50a66deba7a3",
       "name": "Research Agent"
     },
     {
@@ -565,10 +538,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
       "position": [
-        800,
+        1408,
         304
       ],
-      "id": "76ff838e-50af-49ff-bec6-9cfff9338a36",
+      "id": "f5667725-9fd6-48b2-8065-91806ac4141a",
       "name": "Writing Agent"
     },
     {
@@ -580,10 +553,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
       "position": [
-        784,
+        1392,
         800
       ],
-      "id": "6817bb3d-32a6-4917-98a6-e7e1d68d2d95",
+      "id": "a4e81d19-9b49-461e-acdd-d83d5c486605",
       "name": "Coding Agent"
     },
     {
@@ -601,15 +574,15 @@
       "type": "@n8n/n8n-nodes-langchain.googleGemini",
       "typeVersion": 1,
       "position": [
-        1952,
+        2560,
         272
       ],
-      "id": "b1f53df1-07f6-4d8d-bbb8-e91ec8af4bf7",
+      "id": "c86a4c81-7a9b-43a3-a502-da8808dacc1d",
       "name": "Generate Image",
       "credentials": {
         "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
+          "id": "y9lXuptApAW5W61N",
+          "name": "Luna-AI"
         }
       }
     },
@@ -627,15 +600,15 @@
       "type": "@n8n/n8n-nodes-langchain.googleGemini",
       "typeVersion": 1,
       "position": [
-        1952,
+        2560,
         432
       ],
-      "id": "37a0794a-3f36-490a-a6b2-7ad886b4d360",
+      "id": "5b2c2f45-b06e-4c7c-95a6-1cdba062f54b",
       "name": "Generate Video",
       "credentials": {
         "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
+          "id": "y9lXuptApAW5W61N",
+          "name": "Luna-AI"
         }
       }
     },
@@ -650,10 +623,10 @@
       "type": "@n8n/n8n-nodes-langchain.chatTrigger",
       "typeVersion": 1.3,
       "position": [
-        -608,
+        0,
         64
       ],
-      "id": "1a4db2eb-d74c-4fd4-8ade-d4e855a4f6fd",
+      "id": "896b0ce2-bb3c-4bc1-a558-47d5b9c2c652",
       "name": "Chat",
       "webhookId": "57a633a3-c34c-48c2-9a21-756effc6e4ad"
     },
@@ -666,10 +639,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
       "position": [
-        -384,
+        224,
         64
       ],
-      "id": "acab45af-10e1-41b5-85a2-866d23515b39",
+      "id": "bd204f31-f7dd-42d0-bfb3-5fbcefe81e7d",
       "name": "Router"
     },
     {
@@ -679,10 +652,10 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        -288,
+        320,
         448
       ],
-      "id": "ed45c222-e95b-4d62-b477-55ab8b7fe817",
+      "id": "16bc3142-c403-4a19-8dc9-eb69e980856b",
       "name": "Router Memory"
     },
     {
@@ -693,15 +666,15 @@
       "type": "n8n-nodes-base.googleTranslateTool",
       "typeVersion": 2,
       "position": [
-        1040,
+        1648,
         608
       ],
-      "id": "2fcf2153-78b4-43ad-8893-54c1198bafd8",
+      "id": "ec301102-3830-48d6-b505-c13449ec9289",
       "name": "Translate EN",
       "credentials": {
         "googleTranslateOAuth2Api": {
-          "id": "mVcgIUlj2bx5xHqo",
-          "name": "Translate - Luna AI"
+          "id": "hHhFmabbQcqBcsXS",
+          "name": "Luna-AI"
         }
       }
     },
@@ -713,15 +686,15 @@
       "type": "n8n-nodes-base.googleTranslateTool",
       "typeVersion": 2,
       "position": [
-        1168,
+        1776,
         608
       ],
-      "id": "5b77dea2-c870-4da7-a835-bbb2ee651720",
+      "id": "8ac2040f-6339-48c0-8982-3c0d54329fb9",
       "name": "Translate BN",
       "credentials": {
         "googleTranslateOAuth2Api": {
-          "id": "mVcgIUlj2bx5xHqo",
-          "name": "Translate - Luna AI"
+          "id": "hHhFmabbQcqBcsXS",
+          "name": "Luna-AI"
         }
       }
     },
@@ -733,15 +706,15 @@
       "type": "n8n-nodes-base.googleTranslateTool",
       "typeVersion": 2,
       "position": [
-        1296,
+        1904,
         608
       ],
-      "id": "9c2d8762-bf9d-493a-ac98-e1afd9cd3df5",
+      "id": "9adbd862-939c-4c28-8e6f-e31c79d612d3",
       "name": "Translate HI",
       "credentials": {
         "googleTranslateOAuth2Api": {
-          "id": "mVcgIUlj2bx5xHqo",
-          "name": "Translate - Luna AI"
+          "id": "hHhFmabbQcqBcsXS",
+          "name": "Luna-AI"
         }
       }
     },
@@ -752,15 +725,15 @@
       "type": "n8n-nodes-base.openWeatherMapTool",
       "typeVersion": 1,
       "position": [
-        272,
+        880,
         592
       ],
-      "id": "765731de-f37c-4537-8b0b-0fc11bfe1ae4",
+      "id": "d77fd8e9-ef9d-452c-9aaa-d77acc4e429a",
       "name": "Weather",
       "credentials": {
         "openWeatherMapApi": {
-          "id": "B4k1ESUm4hSUYjZH",
-          "name": "Weather - Luna AI"
+          "id": "LZHJfM4B6fxeTzVh",
+          "name": "Luna-AI"
         }
       }
     },
@@ -777,16 +750,16 @@
       "type": "n8n-nodes-base.githubTool",
       "typeVersion": 1.1,
       "position": [
-        1024,
+        1632,
         1104
       ],
-      "id": "95a8b8ed-ff89-4f34-88c3-bceef0695f6d",
+      "id": "45d3fe92-096c-4f77-92fb-f93ba774dca2",
       "name": "Get Repo",
       "webhookId": "2f5a1e7f-a1e2-43ce-8066-28f921a5ced6",
       "credentials": {
         "githubApi": {
-          "id": "WLNrnpaKgViwX7JC",
-          "name": "GitHub - Luna AI"
+          "id": "ceecJ4G4aFDVZoA3",
+          "name": "Luna AI"
         }
       }
     },
@@ -808,16 +781,16 @@
       "type": "n8n-nodes-base.githubTool",
       "typeVersion": 1.1,
       "position": [
-        1136,
+        1744,
         1104
       ],
-      "id": "05e6d939-7cac-49d5-9a1e-ea03218c59b3",
+      "id": "6050df0f-767f-4db8-9f75-e643186d31cc",
       "name": "Get Data",
       "webhookId": "9335a463-2b21-40a8-946f-ec6d192e38a0",
       "credentials": {
         "githubApi": {
-          "id": "WLNrnpaKgViwX7JC",
-          "name": "GitHub - Luna AI"
+          "id": "ceecJ4G4aFDVZoA3",
+          "name": "Luna AI"
         }
       }
     },
@@ -828,10 +801,10 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        1568,
+        2176,
         624
       ],
-      "id": "21ea19a6-632c-45a1-b5e7-bde68d7ac4d3",
+      "id": "05046663-72f9-41ae-88c7-e068278a2170",
       "name": "Media Memory"
     },
     {
@@ -839,10 +812,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolThink",
       "typeVersion": 1.1,
       "position": [
-        1664,
+        2272,
         480
       ],
-      "id": "1618d85a-96a1-41d3-bae2-f0788a3044e9",
+      "id": "99bb6054-1ff5-4c1f-a7ae-3296b273a941",
       "name": "Think - M"
     },
     {
@@ -930,10 +903,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.3,
       "position": [
-        1760,
+        2368,
         288
       ],
-      "id": "8e8a56d1-2ffa-444f-9306-8628047ba213",
+      "id": "7b85439c-b2c0-41c3-bac4-ff1ddbff728e",
       "name": "Media Switch"
     },
     {
@@ -945,10 +918,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
       "position": [
-        1472,
+        2080,
         304
       ],
-      "id": "49864967-d44f-4411-8380-4cc33dd97a9f",
+      "id": "1410951d-c970-4bff-8013-7b4dcfb14b79",
       "name": "Media Agent"
     },
     {
@@ -958,10 +931,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1952,
+        2560,
         592
       ],
-      "id": "b79c97d5-3393-4f26-a692-884981f1182d",
+      "id": "b86871a7-78d3-44a2-9607-707f09d8d830",
       "name": "Extract Quotes"
     },
     {
@@ -972,10 +945,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2112,
+        2720,
         592
       ],
-      "id": "0d3e14b9-a50a-4381-8cb2-0cd753020a6a",
+      "id": "434d899b-79b2-454c-a06b-67ea69e60ebd",
       "name": "VoiceRSS TTS"
     },
     {
@@ -986,15 +959,15 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -384,
+        224,
         256
       ],
-      "id": "5d085800-55c3-4961-b0ba-2a5f9853568c",
+      "id": "c2585650-7fd9-492e-88c4-9894d4b5dc5a",
       "name": "Gemini",
       "credentials": {
         "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
+          "id": "y9lXuptApAW5W61N",
+          "name": "Luna-AI"
         }
       }
     },
@@ -1006,15 +979,15 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        32,
+        640,
         480
       ],
-      "id": "eed45483-16b9-4839-80de-f4db3ecad8f8",
+      "id": "a834438b-1185-4383-8b2c-3bd8134c2f0f",
       "name": "General",
       "credentials": {
         "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
+          "id": "y9lXuptApAW5W61N",
+          "name": "Luna-AI"
         }
       }
     },
@@ -1026,15 +999,15 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        800,
+        1408,
         496
       ],
-      "id": "bf43c9be-f8d6-4186-8466-02b0e87be719",
+      "id": "60a07d63-53cf-42ab-a11c-bfc9969ef5ae",
       "name": "Writing",
       "credentials": {
         "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
+          "id": "y9lXuptApAW5W61N",
+          "name": "Luna-AI"
         }
       }
     },
@@ -1046,15 +1019,15 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        1472,
+        2080,
         496
       ],
-      "id": "20bcbb3b-13d3-4eab-bb38-39ccdfb7702e",
+      "id": "74f5aa6f-5e48-491b-873a-fde48523c52f",
       "name": "Media",
       "credentials": {
         "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
+          "id": "y9lXuptApAW5W61N",
+          "name": "Luna-AI"
         }
       }
     },
@@ -1066,51 +1039,31 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        16,
-        1008
-      ],
-      "id": "8dd83436-f691-490f-9688-db95326e4cee",
-      "name": "Research",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-3.1-flash-lite",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        784,
+        1392,
         992
       ],
-      "id": "d8cadebf-5ee7-488c-ab82-c416fa09ecca",
+      "id": "b16dbc81-1e63-4b95-8840-ff22807425f6",
       "name": "Coding",
       "credentials": {
         "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
+          "id": "y9lXuptApAW5W61N",
+          "name": "Luna-AI"
         }
       }
     },
     {
       "parameters": {
         "promptType": "=define",
-        "text": "=ROLE: You are the News & Current Events Specialist for Luna. Your role is to fetch, synthesize, and present real-time news headlines, breaking stories, regional updates, and topic-specific news across verified RSS feeds and search APIs.\n\nINPUT FORMAT: You receive user queries via {{ $('Chat').item.json.chatInput }}.\n\nAVAILABLE TOOLS:\n- Think - N: Internal reasoning for topic synthesis, news filtering, and multi-feed summaries.\n- Date & Time - N: Fetches current system time to contextualize relative queries (e.g., \"today\", \"yesterday\").\n- SerpAPI - N: Real-time web search for live breaking updates, specific niche events, or missing topic feeds.\n\nRSS FEED TOOLS\n- Republic World Feeds: R. Ex, R. India, R. World, R. Fact, R. Science, R. Space, R. Tech, R. Sports, R. Game\n- NDTV Feeds: NDTV Late, NDTV Trend, NDTV Top, NDTV India, NDTV World, NDTV Tech, NDTV Sports\n- ABP Live Feeds: ABP Home, ABP Trend, ABP Fact, ABP India, ABP World, ABP Tech, ABP Sports, ABP Game\n\nTOOL EXECUTION RULES:\n1. SMART ROUTING: Select relevant feeds based on the user's query topic (e.g., query about space → run R. Space, R. Science, SerpAPI - N).\n2. MULTI-FEED COVERAGE: For broad news queries (e.g., \"Latest India news\"), query matching feeds across multiple providers (e.g., NDTV India, ABP India, R. India) simultaneously to ensure multi-angle coverage.\n3. TIME CONTEXT: Call `Date & Time - N` when user queries depend on specific dates or relative timeframes.\n4. SEARCH BACKUP: Trigger `SerpAPI - N` if RSS feeds do not return sufficient details for specific breaking events or niche topics.\n\nCAPABILITIES:\n- Synthesize concurrent streams from national, international, tech, space, gaming, and sports RSS feeds.\n- Deduplicate overlapping stories, cross-reference sources, and build cohesive thematic summaries.\n- Clearly attribute every headline to its originating publication and specific feed.\n\nAPPROACH & BEHAVIOR:\n1. Multi-Feed Integration: Group information gathered across tools into clear, structured thematic categories.\n2. Neutral & Objective: Present facts directly without political bias, commentary, or sensationalism.\n3. Accurate Attribution: Explicitly tag the originating news source (e.g., NDTV, Republic World, ABP Live, or SerpAPI Web Search).\n\nRESPONSE FORMAT:\nDeliver updates using the following structured Markdown layout:\n\n## [Category / Topic] News Headlines\n\n* **[Headline Title 1]** - *[Source Name]*\n  Brief 1-2 sentence summary of key details.\n\n* **[Headline Title 2]** - *[Source Name]*\n  Brief 1-2 sentence summary of key details.\n\nSTRICT BOUNDARIES:\n- DO NOT provide general conversational advice or weather (Defer to: General Agent).\n- DO NOT perform code debugging or programming assistance (Defer to: Coding Agent).\n- DO NOT draft creative stories, essays, or editorials (Defer to: Writing Agent).\n- DO NOT generate, edit, or animate media files (Defer to: Media Agent).\n\nFORMATTING REQUIREMENTS:\n- Use clean Markdown bulleted lists with bold titles.\n- Keep summaries concise and scannable.\n- Do not append concluding summaries or sections labeled \"In Conclusion\" or \"Summary\".",
+        "text": "=ROLE: You are the News & Current Events Specialist for Luna. Your role is to fetch, synthesize, and present real-time news headlines, breaking stories, regional updates, and topic-specific news across verified RSS feeds and search APIs.\n\nINPUT FORMAT: You receive user queries via {{ $('Chat').item.json.chatInput }}.\n\nAVAILABLE TOOLS:\n- Think - N: Internal reasoning for topic synthesis, news filtering, and multi-feed summaries.\n- Date & Time - N: Fetches current system time to contextualize relative queries (e.g., \"today\", \"yesterday\").\n- Tavily - N: Real-time web search for live breaking updates, specific niche events, or missing topic feeds.\n\nRSS FEED TOOLS\n- Republic World Feeds: R. Ex, R. India, R. World, R. Fact, R. Science, R. Space, R. Tech, R. Sports, R. Game\n- NDTV Feeds: NDTV Late, NDTV Trend, NDTV Top, NDTV India, NDTV World, NDTV Tech, NDTV Sports\n- ABP Live Feeds: ABP Home, ABP Trend, ABP Fact, ABP India, ABP World, ABP Tech, ABP Sports, ABP Game\n\nTOOL EXECUTION RULES:\n1. SMART ROUTING: Select relevant feeds based on the user's query topic (e.g., query about space → run R. Space, R. Science, Tavily - N).\n2. MULTI-FEED COVERAGE: For broad news queries (e.g., \"Latest India news\"), query matching feeds across multiple providers (e.g., NDTV India, ABP India, R. India) simultaneously to ensure multi-angle coverage.\n3. TIME CONTEXT: Call `Date & Time - N` when user queries depend on specific dates or relative timeframes.\n4. SEARCH BACKUP: Trigger `Tavily - N` if RSS feeds do not return sufficient details for specific breaking events or niche topics.\n\nCAPABILITIES:\n- Synthesize concurrent streams from national, international, tech, space, gaming, and sports RSS feeds.\n- Deduplicate overlapping stories, cross-reference sources, and build cohesive thematic summaries.\n- Clearly attribute every headline to its originating publication and specific feed.\n\nAPPROACH & BEHAVIOR:\n1. Multi-Feed Integration: Group information gathered across tools into clear, structured thematic categories.\n2. Neutral & Objective: Present facts directly without political bias, commentary, or sensationalism.\n3. Accurate Attribution: Explicitly tag the originating news source (e.g., NDTV, Republic World, ABP Live, or Tavily News Search).\n\nRESPONSE FORMAT:\nDeliver updates using the following structured Markdown layout:\n\n## [Category / Topic] News Headlines\n\n* **[Headline Title 1]** - *[Source Name]*\n  Brief 1-2 sentence summary of key details.\n\n* **[Headline Title 2]** - *[Source Name]*\n  Brief 1-2 sentence summary of key details.\n\nSTRICT BOUNDARIES:\n- DO NOT provide general conversational advice or weather (Defer to: General Agent).\n- DO NOT perform code debugging or programming assistance (Defer to: Coding Agent).\n- DO NOT draft creative stories, essays, or editorials (Defer to: Writing Agent).\n- DO NOT generate, edit, or animate media files (Defer to: Media Agent).\n\nFORMATTING REQUIREMENTS:\n- Use clean Markdown bulleted lists with bold titles.\n- Keep summaries concise and scannable.\n- Do not append concluding summaries or sections labeled \"In Conclusion\" or \"Summary\".",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
       "position": [
-        1472,
+        2080,
         800
       ],
-      "id": "654199de-8169-4147-a4cf-7c6b538de50a",
+      "id": "d8d21aa1-026b-4ba6-accf-7bf636959156",
       "name": "News Agent"
     },
     {
@@ -1121,15 +1074,15 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        1472,
+        2080,
         992
       ],
-      "id": "4efab089-277a-48a7-ad8c-41e5dd6140e4",
+      "id": "c1a291ad-91e7-4faf-ac21-1764d563a460",
       "name": "News",
       "credentials": {
         "googlePalmApi": {
-          "id": "dXyNBIXcPjgRLiHw",
-          "name": "Gemini - Luna AI"
+          "id": "y9lXuptApAW5W61N",
+          "name": "Luna-AI"
         }
       }
     },
@@ -1138,49 +1091,11 @@
       "type": "@n8n/n8n-nodes-langchain.toolThink",
       "typeVersion": 1.1,
       "position": [
-        1712,
+        2320,
         976
       ],
-      "id": "95eb4e71-365c-491c-895f-cbe59f3329e5",
+      "id": "0b14dc09-c41f-4c52-a13c-1ac260c47bfa",
       "name": "Think - N"
-    },
-    {
-      "parameters": {
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.toolSerpApi",
-      "typeVersion": 1,
-      "position": [
-        576,
-        992
-      ],
-      "id": "4347066d-5dd8-43d5-826e-c38e1f7e76ee",
-      "name": "SerpAPI - R",
-      "credentials": {
-        "serpApi": {
-          "id": "U5gN2y0RH6Ub2W9a",
-          "name": "SerpAPI - Luna AI"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.toolSerpApi",
-      "typeVersion": 1,
-      "position": [
-        1936,
-        976
-      ],
-      "id": "ec6646fe-e7d7-4386-ae9a-8ae54538881e",
-      "name": "SerpAPI - N",
-      "credentials": {
-        "serpApi": {
-          "id": "U5gN2y0RH6Ub2W9a",
-          "name": "SerpAPI - Luna AI"
-        }
-      }
     },
     {
       "parameters": {
@@ -1191,10 +1106,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        1712,
+        2320,
         1104
       ],
-      "id": "8ef757f5-df22-4993-b3d1-3b505f5f156a",
+      "id": "3961bcbc-d52a-4b50-a7ab-6c45da44d85c",
       "name": "R. Ex"
     },
     {
@@ -1206,10 +1121,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2160,
+        2768,
         1104
       ],
-      "id": "95595730-79a5-449f-b4c8-1c33885c7b5d",
+      "id": "969a252c-e526-49b2-9f59-405ac5de20c9",
       "name": "R. India"
     },
     {
@@ -1221,10 +1136,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2272,
+        2880,
         1104
       ],
-      "id": "fccc429d-306e-44b0-a323-5aec8384ffad",
+      "id": "0d2f590b-5746-4330-a08d-0ddc00617c8d",
       "name": "R. World"
     },
     {
@@ -1236,10 +1151,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2048,
+        2656,
         1104
       ],
-      "id": "47e62d3f-21a1-443b-9904-9c36c195b7b3",
+      "id": "1d4619b3-2472-429c-930b-e0b602ef501b",
       "name": "R. Fact"
     },
     {
@@ -1251,10 +1166,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2384,
+        2992,
         1104
       ],
-      "id": "149a1c62-2513-406b-9875-8705b7a59476",
+      "id": "8a833b63-36fd-4181-bf14-289b6eca29fe",
       "name": "R. Science"
     },
     {
@@ -1266,10 +1181,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2496,
+        3104,
         1104
       ],
-      "id": "0b8b5d79-f091-4fb0-978f-16207c74fa2f",
+      "id": "a88243ee-ea24-4b9c-a8c8-41027a3c580a",
       "name": "R. Tech"
     },
     {
@@ -1281,10 +1196,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2720,
+        3328,
         1104
       ],
-      "id": "f93af6a1-92bf-444c-9920-6d5514252bf0",
+      "id": "9fc566da-9566-4a42-931e-f6973ab46673",
       "name": "R. Sports"
     },
     {
@@ -1296,10 +1211,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2720,
+        3328,
         1232
       ],
-      "id": "d0a28082-9000-44fb-898e-12828674ee82",
+      "id": "0d40de8e-3e33-454e-83bb-4c933a842c98",
       "name": "NDTV Sports"
     },
     {
@@ -1311,10 +1226,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2496,
+        3104,
         1232
       ],
-      "id": "d921a54f-6b67-4d0e-9841-31898e3e9bf3",
+      "id": "b66abbe7-ac60-4701-bb9b-be39b710e96b",
       "name": "NDTV Tech"
     },
     {
@@ -1326,10 +1241,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2272,
+        2880,
         1232
       ],
-      "id": "85e83c3b-a3b9-44ac-9938-8e33f954d37b",
+      "id": "0c46702d-8a2c-4e7e-9e2d-99bcd1f0d51a",
       "name": "NDTV World"
     },
     {
@@ -1341,10 +1256,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2160,
+        2768,
         1232
       ],
-      "id": "afde7ea3-3c13-44ba-a6e6-924eb846f79d",
+      "id": "42082cab-07ce-4d6a-9b5a-29a36ef12e6e",
       "name": "NDTV India"
     },
     {
@@ -1356,10 +1271,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        1712,
+        2320,
         1232
       ],
-      "id": "e4d4c90c-7d78-4531-901f-c1c598b13190",
+      "id": "10cbc95c-5e1d-46a3-9e3d-2755fec097e8",
       "name": "NDTV Late"
     },
     {
@@ -1371,10 +1286,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        1824,
+        2432,
         1232
       ],
-      "id": "3c6ba08f-b0e0-4253-b633-4f166ea90aab",
+      "id": "b41f7942-e8bb-4f26-96c9-fd97b99a8bad",
       "name": "NDTV Trend"
     },
     {
@@ -1386,10 +1301,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        1936,
+        2544,
         1232
       ],
-      "id": "e62f6bd4-76da-4012-b84e-3fd5d2a37e98",
+      "id": "ee8b8c14-22f9-44a6-bc8e-b4335902e59b",
       "name": "NDTV Top"
     },
     {
@@ -1401,10 +1316,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        1712,
+        2320,
         1360
       ],
-      "id": "e49f512e-7dc2-46ba-b205-637b54354d17",
+      "id": "96ccf5d0-a892-4cc1-b636-ffa66098617e",
       "name": "ABP Home"
     },
     {
@@ -1416,10 +1331,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        1824,
+        2432,
         1360
       ],
-      "id": "b467930a-c962-4b6e-ba5f-08b10915097f",
+      "id": "9c83a8c8-4d52-42d6-9097-bf7a17ee1455",
       "name": "ABP Trend"
     },
     {
@@ -1431,10 +1346,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2048,
+        2656,
         1360
       ],
-      "id": "3730503d-ef97-4fd2-b7bd-7a89b0d6e001",
+      "id": "c5fda358-e1d2-46e8-bb48-685acd5e589c",
       "name": "ABP Fact"
     },
     {
@@ -1446,10 +1361,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2160,
+        2768,
         1360
       ],
-      "id": "e4ab6750-8ee8-4bd9-aeea-a2c1aebf4d2e",
+      "id": "f90b87a6-b3c0-47ff-8ed8-48da6188d096",
       "name": "ABP India"
     },
     {
@@ -1461,10 +1376,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2272,
+        2880,
         1360
       ],
-      "id": "f82a545a-8df9-46c3-871f-5d7b1ca0873c",
+      "id": "c247b195-be8b-4f3b-960a-a9b80a6664cc",
       "name": "ABP World"
     },
     {
@@ -1476,10 +1391,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2832,
+        3440,
         1360
       ],
-      "id": "73403f5a-54f4-4095-860a-71bd9e86f417",
+      "id": "3b5f8aff-f81a-4837-b6d2-bcf005230f5f",
       "name": "ABP Game"
     },
     {
@@ -1491,10 +1406,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2496,
+        3104,
         1360
       ],
-      "id": "0f612692-abdd-4c7f-ae52-f4a4763e9766",
+      "id": "c508577c-8ccd-42f9-8fd2-a3b9b3434de7",
       "name": "ABP Tech"
     },
     {
@@ -1506,10 +1421,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2720,
+        3328,
         1360
       ],
-      "id": "56bc27fc-c043-48a6-b2ab-78774c44dc29",
+      "id": "9de6c3bb-5b96-456b-a9bb-ce646d109acc",
       "name": "ABP Sports"
     },
     {
@@ -1521,10 +1436,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2832,
+        3440,
         1104
       ],
-      "id": "c6332335-ae39-4aef-8fe3-bb2babcb7b2d",
+      "id": "ae6da43c-ad5c-4d5a-9a9a-1f1dbf3d5415",
       "name": "R. Game"
     },
     {
@@ -1536,10 +1451,10 @@
       "type": "n8n-nodes-base.rssFeedReadTool",
       "typeVersion": 1.2,
       "position": [
-        2608,
+        3216,
         1104
       ],
-      "id": "8f4ffb4f-3c0d-4917-8c3b-42048e8b5365",
+      "id": "c4666400-22a4-4544-8add-63a066aac807",
       "name": "R. Space"
     },
     {
@@ -1551,10 +1466,10 @@
       "type": "n8n-nodes-base.dateTimeTool",
       "typeVersion": 2,
       "position": [
-        496,
+        1104,
         464
       ],
-      "id": "aec5964e-55d9-49e5-8c6c-893eaf25a897",
+      "id": "e622f3e0-8967-4cae-9e67-be801abf1d3d",
       "name": "Date & Time - G"
     },
     {
@@ -1564,10 +1479,10 @@
       "type": "n8n-nodes-base.dateTimeTool",
       "typeVersion": 2,
       "position": [
-        1824,
+        2432,
         976
       ],
-      "id": "9d35b6f9-226d-4518-ad44-f8e2c0bc0c1d",
+      "id": "cd71e916-dcbe-41a1-ad3f-6fb314bd9ac2",
       "name": "Date & Time - N"
     },
     {
@@ -1577,11 +1492,88 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        1568,
+        2176,
         1120
       ],
-      "id": "2157f5b8-2ec2-4939-811a-fe397f64e192",
+      "id": "0e76dfce-3099-4b93-a82f-8f81518c39da",
       "name": "News Memory"
+    },
+    {
+      "parameters": {
+        "topic": "general",
+        "timeRange": "any",
+        "searchDepth": "advanced",
+        "includeAnswer": "none",
+        "includeDomains": "",
+        "excludeDomains": "",
+        "options": {}
+      },
+      "type": "@tavily/n8n-nodes-tavily.tavilyTool",
+      "typeVersion": 2,
+      "position": [
+        1184,
+        992
+      ],
+      "id": "1bae24d4-dc2e-448a-97fd-8cce558831dc",
+      "name": "Tavily - R",
+      "credentials": {
+        "tavilyApi": {
+          "id": "zW20fsUnT1BYFSaC",
+          "name": "Luna AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "video",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-3.1-flash-lite",
+          "mode": "list",
+          "cachedResultName": "models/gemini-3.1-flash-lite"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGeminiTool",
+      "typeVersion": 1,
+      "position": [
+        1072,
+        1120
+      ],
+      "id": "0c4f95ff-228e-405c-931d-763f2ff5fb8f",
+      "name": "Video",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "y9lXuptApAW5W61N",
+          "name": "Luna-AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "topic": "news",
+        "timeRange": "any",
+        "searchDepth": "basic",
+        "includeAnswer": "none",
+        "includeDomains": "",
+        "excludeDomains": "",
+        "options": {}
+      },
+      "type": "@tavily/n8n-nodes-tavily.tavilyTool",
+      "typeVersion": 2,
+      "position": [
+        2544,
+        976
+      ],
+      "id": "9c7730fd-2a2b-4513-8529-b1c5cd0adbed",
+      "name": "Tavily - N",
+      "credentials": {
+        "tavilyApi": {
+          "id": "zW20fsUnT1BYFSaC",
+          "name": "Luna AI"
+        }
+      }
     }
   ],
   "pinData": {},
@@ -1598,17 +1590,6 @@
       ]
     },
     "Audio": {
-      "ai_tool": [
-        [
-          {
-            "node": "Research Agent",
-            "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Video": {
       "ai_tool": [
         [
           {
@@ -2086,22 +2067,6 @@
         ]
       ]
     },
-    "VoiceRSS TTS": {
-      "main": [
-        []
-      ]
-    },
-    "Research": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "Research Agent",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Coding": {
       "ai_languageModel": [
         [
@@ -2125,28 +2090,6 @@
       ]
     },
     "Think - N": {
-      "ai_tool": [
-        [
-          {
-            "node": "News Agent",
-            "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "SerpAPI - R": {
-      "ai_tool": [
-        [
-          {
-            "node": "Research Agent",
-            "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "SerpAPI - N": {
       "ai_tool": [
         [
           {
@@ -2453,26 +2396,58 @@
           }
         ]
       ]
+    },
+    "Tavily - R": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Video": {
+      "ai_tool": [
+        [
+          {
+            "node": "Research Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tavily - N": {
+      "ai_tool": [
+        [
+          {
+            "node": "News Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": false,
   "settings": {
     "executionOrder": "v1",
-    "binaryMode": "separate",
-    "availableInMCP": false
+    "binaryMode": "separate"
   },
-  "versionId": "e1b122de-1271-4a05-a0e7-57f8cfbefa7a",
+  "versionId": "f87134bc-5808-4939-9f8b-5b3f0465371a",
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "6dc181b4455935aacf167a3c4386ec91af04388d35013f2006729c412d95e35d"
+    "instanceId": "2da22788b0bf09fa97a72f663349bce59fd7b5f3d817df3de98f755854375866"
   },
   "nodeGroups": [],
-  "id": "aXbiEhAdkwh5CdxY",
+  "id": "WCYWMr12rtmBoul0",
   "tags": [
     {
-      "updatedAt": "2026-07-27T04:15:05.756Z",
-      "createdAt": "2026-07-27T04:15:05.756Z",
-      "id": "5Au0G4XE89D7ajjM",
+      "updatedAt": "2026-10-15T12:50:49.016Z",
+      "createdAt": "2026-10-15T12:50:49.016Z",
+      "id": "8yv75HpMZT0RVApl",
       "name": "@saptarshiroy39"
     }
   ]
